@@ -1,38 +1,89 @@
-.App {
+body {
+  background: orange;
+  height: 100vh;
+  font-weight: bold;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+.container {
+  border: 20px;
+  border-color: blue;
+}
+.row {
+  margin: 1rem;
+  border: solid 2px;
+  border-color: blue;
+  min-height: 20vh;
+  border-radius: 5px;
+}
+#pantry {
+  padding-top: 2rem !important;
+  margin-top: 2rem;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: blue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  color: blue;
+}
+#col-2 {
+  margin-top: 2rem;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+#col-5 {
+  font-size: 25px;
+}
+#col-6 {
+  margin-top: 0;
+}
+p,
+h4 {
+  margin: 0;
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  section:nth-child(2) input {
+    width: 100%;
+  } /*targets specific devices with known width */
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 50%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+div {
+  white-space: nowrap;
+  /* overflow: hidden; */
+}
+.p {
+  font-size: 50px;
+}
+
+#hours {
+  font-size: 15px;
+  
+}
+img {
+  width: 20vh;
+  border-radius: 90px;
+  margin-top: 10px
+ 
+}
+#logo {
+  width: 50px;
+  height: 50px;
+
 }
