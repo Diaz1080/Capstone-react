@@ -8,7 +8,6 @@ const East = () => {
 			<h1>East</h1>
 			<Link to="/North">North</Link>
             <Link to="/South">South</Link>
-            <Link to="/East">East</Link>
             <Link to="/West">West</Link>
 		</div>
 	);

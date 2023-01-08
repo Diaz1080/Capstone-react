@@ -1,57 +1,61 @@
 import { Link } from "react-router-dom";
 import "./App.css";
-import Template from "./Template";
+import Template, {
+  Logo,
+  PantryInfo,
+  Hour,
+  Requirements,
+  SocialMediaHandles,
+} from "./Template";
 import App from "./App";
 
-
 const North = () => {
-	return (
-		<div>
-			<h1>North</h1>
-			<Link to="/North">North</Link>
-            <Link to="/South">South</Link>
-            <Link to="/East">East</Link>
-            <Link to="/West">West</Link>
-			
-    {/* <div className="container-fluid"> */}
-      {/* <p className="p text-left">
+  return (
+    <div>
+      
+      <Link to="/South">South</Link>
+      <Link to="/East">East</Link>
+      <Link to="/West">West</Link>
+
+      <div className="container-fluid">
+        {/* <p className="p text-left">
         <a href="index.html">←</a>
       </p> */}
-{/* 
-      <h1>North Side Pantry Information:</h1>
-      <div className="row">
-        <div className="col">
-          <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
+
+        <h1>North Side Pantry Information:</h1>
+        <div className="row">
+          <div className="col">
+            <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
+          </div>
+          <PantryInfo
+            bussinessName="Syracuse North East Community Center"
+            bussinessName2="Food Pantry-Food Distribution Center"
+            adress="716 Hawley Ave"
+            cityStateZip="Syracuse NY 13203"
+          />
+          <div className="col">
+            <h4>Hours:</h4>
+            <Hour day="MON" time="10AM - 12PM" />
+            <Hour day="WED" time="10AM - 12PM" />
+            <Hour day="THUR" time="2PM - 5PM" />
+          </div>
+          <Requirements
+            text1="First time user must fill"
+            text2="out registration form."
+          />
+          <SocialMediaHandles
+            urlLink="https://www.facebook.com/SNCCSYR"
+            image="./logos/ico-facebook.png"
+            urlLink1="https://twitter.com/SNCCSYR"
+            image1="./logos/ico-twitter.png"
+            urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
+            image2="./logos/ico-linkedin.png"
+            urlLink3="https://www.instagram.com/sncc315/"
+            image3="./logos/ico-instagram.png"
+          />
         </div>
-        <PantryInfo
-          bussinessName="Syracuse North East Community Center"
-          bussinessName2="Food Pantry-Food Distribution Center"
-          adress="716 Hawley Ave"
-          cityStateZip="Syracuse NY 13203"
-        />
-        <div className="col">
-          <h4>Hours:</h4>
-          <Hour day="MON" time="10AM - 12PM" />
-          <Hour day="WED" time="10AM - 12PM" />
-          <Hour day="THUR" time="2PM - 5PM" />
-        </div>
-        <Requirements
-          text1="First time user must fill"
-          text2="out registration form."
-        />
-        <SocialMediaHandles
-          urlLink="https://www.facebook.com/SNCCSYR"
-          image="./logos/ico-facebook.png"
-          urlLink1="https://twitter.com/SNCCSYR"
-          image1="./logos/ico-twitter.png"
-          urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
-          image2="./logos/ico-linkedin.png"
-          urlLink3="https://www.instagram.com/sncc315/"
-          image3="./logos/ico-instagram.png"
-        />
-      </div> */}
-      {/* End Row 1 */}
-      {/* <div className="row">
+        {/* End Row 1 */}
+        {/* <div className="row">
         <div className="col">
           <Logo
             a="https://vineyardny.org/foodpantry"
@@ -82,8 +86,8 @@ const North = () => {
           image1="./logos/ico-facebook.png"
         />
       </div> */}
-      {/* End Row 2 */}
-      {/* <div className="row">
+        {/* End Row 2 */}
+        {/* <div className="row">
        
           <Logo a="" img="./logos/allfaiths.png" />
         
@@ -114,8 +118,8 @@ const North = () => {
           image3="./logos/ico-instagram.png"
         />
       </div> */}
-      {/* End Row 3 */}
-      {/* <div className="row">
+        {/* End Row 3 */}
+        {/* <div className="row">
         <Logo a="https://claupc.org/syracuse/" img="./logos/cla.png" />
 
         <PantryInfo
@@ -137,8 +141,8 @@ const North = () => {
 
         <SocialMediaHandles />
       </div> */}
-      {/* End Row 4 */}
-      {/* <div className="row" id="pantry">
+        {/* End Row 4 */}
+        {/* <div className="row" id="pantry">
         <FoodBank
           urlLink4="https://www.foodbankcny.org/"
           bussinessName4="Food Bank"
@@ -178,11 +182,9 @@ const North = () => {
           image3="logos/ico-twitter.png"
         />
       </div> */}
-    {/* </div> */}
-</div>
-	);
+      </div>
+    </div>
+  );
 };
-
-		
 
 export default North;
