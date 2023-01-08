@@ -3,9 +3,6 @@ import "./Main.css"
 
 const New = () => {
 	return (
-		
-		
-		
         <div className="container">
         <form className="form" method="POST" action="https://mailthis.to/nydia1080@yahoo.com">
             <h1 className="form__title">New Pantry Request Form</h1>
@@ -51,7 +48,7 @@ const New = () => {
                 />
                 <div className="form__input-error-message">
             </div>
-
+            </div>
             <div className="form__input-group">
                 <input
                 type="text"
@@ -108,12 +105,12 @@ const New = () => {
                 <div className="form__input-error-message"></div>
             </div>
             <p className="form__text">
-                <Link className="form__link" to="index.html" id="arrow"
-                  >⬅︎</Link>
+                <Link className="form__link" to="/Home" id="arrow"
+                  >Home</Link>
             </p>
         </form>
-        </div>
+    </div>
 	);
 };
 
-export default Home;
+export default New;

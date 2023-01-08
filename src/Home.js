@@ -6,7 +6,7 @@ const Home = () => {
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light bg-primary" id="nav">
         <div className="container-fluid">
-          <a className="navbar-brand" to="/Home"></a>
+          <Link className="navbar-brand" to="/Home"></Link>
           <button
             className="navbar-toggler"
             type="button"

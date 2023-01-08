@@ -5,6 +5,7 @@ import South from "./South";
 import West from "./West";
 import East from "./East";
 import Home from "./Home";
+import New from "./New"
 
 function App() {
   return (
