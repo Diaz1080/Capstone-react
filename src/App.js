@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import North from "./North";
@@ -14,8 +14,8 @@ function App() {
 				<Routes>
 					<Route path="/North" element={<North />} />
 					<Route path="/South" element={<South />} />
-          <Route path="/East" element={<East />} />
-          <Route path="/West" element={<West />} />
+          			<Route path="/East" element={<East />} />
+          			<Route path="/West" element={<West />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
