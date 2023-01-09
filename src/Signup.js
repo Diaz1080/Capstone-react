@@ -3,84 +3,85 @@ import "./Main.css"
 
 const Signup = () => {
 	return (
-		<div ClassName="container">
-      <form ClassName="form" id="login">
-        <h1 ClassName="form__title">Login</h1>
-        <div ClassName="form__message form__message--error"></div>
-        <div ClassName="form__input-group">
+		<div className="container">
+      <form className="form" id="login">
+        <h1 className="form__title">Login</h1>
+        <div className="form__message form__message--error"></div>
+        <div className="form__input-group">
           <input
             type="text"
-            ClassName="form__input"
-            autofocus
+            className="form__input"
+            autoFocus
             placeholder="Username or Email"
           />
-          <div ClassName="form__input-error-message"></div>
+          <div className="form__input-error-message"></div>
         </div>
 
-        <div ClassName="form__input-group">
+        <div className="form__input-group">
           <input
             type="password"
-            ClassName="form__input"
-            autofocus
+            className="form__input"
+            autoFocus
             placeholder="Password"
           />
-          <div ClassName="form__input-error-message"></div>
+          <div className="form__input-error-message"></div>
         </div>
 
-        <button ClassName="form__button" type="submit">Continue</button>
-        <p ClassName="form__text">
-          <Link to="#" ClassName="form__link">Forgot your password?</Link>
+        <button className="form__button" type="submit">Continue</button>
+        <p className="form__text">
+          <Link to="#" className="form__link">Forgot your password?</Link>
         </p>
-        <p ClassName="form__text">
-          <Link ClassName="form__link" to="./Home" id="linkCreateAccount"
+        <p className="form__text">
+          <Link className="form__link" to="/createAccount" id="linkCreateAccount"
             >Don't have an account? Create account</Link>
         </p>
       </form>
-      <form ClassName="form form--hidden" id="createAccount">
-        <h1 ClassName="form__title">Create Account</h1>
-        <div ClassName="form__message form__message--error"></div>
-        <div ClassName="form__input-group">
+      {/*form--hidden on form className taken out to show the creat page */}
+      <form className="form " id="createAccount">
+        <h1 className="form__title">Create Account</h1>
+        <div className="form__message form__message--error"></div>
+        <div className="form__input-group">
           <input
             type="text"
             id="signupUsername"
-            ClassName="form__input"
-            autofocus
+            className="form__input"
+            autoFocus
             placeholder="Username"
           />
-          <div ClassName="form__input-error-message"></div>
+          <div className="form__input-error-message"></div>
         </div>
-        <div ClassName="form__input-error-message">
-          <div ClassName="form__input-group"></div>
+        <div className="form__input-error-message">
+          <div className="form__input-group"></div>
           <input
             type="text"
-            ClassName="form__input"
-            autofocus
+            className="form__input"
+            autoFocus
             placeholder="Email Adress"
           />
-          <div ClassName="form__input-error-message"></div>
+          <div className="form__input-error-message"></div>
         </div>
-        <div ClassName="form__input-group">
+        <div className="form__input-group">
           <input
             type="password"
-            ClassName="form__input"
-            autofocus
+            className="form__input"
+            autoFocus
             placeholder="Password"
           />
-          <div ClassName="form__input-error-message"></div>
+          <div className="form__input-error-message"></div>
         </div>
-        <div ClassName="form__input-group">
+        <div className="form__input-group">
           <input
             type="password"
-            ClassName="form__input"
-            autofocus
+            className="form__input"
+            autoFocus
             placeholder="Confirm password"
           />
-          <div ClassName="form__input-error-message"></div>
+          <div className="form__input-error-message"></div>
         </div>
-        <button ClassName="form__button" type="submit">Continue</button>
+        <button className="form__button" type="submit">Continue</button>
 
-        <p ClassName="form__text">
-          <Link ClassName="form__link" to="./Home" id="linkLogin"
+        <p className="form__text">
+          <Link className="form__link" to="/" id="linkLogin"
             >Already have an account? Sign In</Link>
         </p>
       </form>

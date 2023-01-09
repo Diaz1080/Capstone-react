@@ -4,51 +4,51 @@ import "./Main.css";
 const Contact = () => {
 	return (
 
-        <div ClassName="container">
-            <form ClassName="form" method="POST" action="https://mailthis.to/nydia1080@yahoo.com">
-                <h1 ClassName="form__title">Contact Form</h1>
+        <div className="container">
+            <form className="form" method="POST" action="https://mailthis.to/nydia1080@yahoo.com">
+                <h1 className="form__title">Contact Form</h1>
                 
-                <div ClassName="form__message form__message--error"></div>
-                <div ClassName="form__input-group">
+                <div className="form__message form__message--error"></div>
+                <div className="form__input-group">
                     <input
                     type="text"
                     id="signupUsername"
-                    ClassName="form__input"
+                    className="form__input"
                     autofocus
                     placeholder="First Name"
                     />
-                    <div ClassName="form__input-error-message"></div>
+                    <div className="form__input-error-message"></div>
                 </div>
 
-                <div ClassName="form__input-group">
+                <div className="form__input-group">
                     <input
                     type="text"
-                    ClassName="form__input"
+                    className="form__input"
                     autofocus
                     placeholder="Last Name"
                     />
-                    <div ClassName="form__input-error-message"></div>
+                    <div className="form__input-error-message"></div>
                 </div>
                     
-                <div ClassName="form__input-group">
+                <div className="form__input-group">
                     <input
                     type="text"
-                    ClassName="form__input"
+                    className="form__input"
                     autofocus
                     placeholder="Email"
                     />
-                    <div ClassName="form__input-error-message"></div>
+                    <div className="form__input-error-message"></div>
                 </div>
 
-                <div ClassName="form__input-group">
+                <div className="form__input-group">
                     <input
                     type="text"
-                    ClassName="form__input"
+                    className="form__input"
                     rows="4"
                     autofocus
                     placeholder="I am Listening..."
                     />
-                    <div ClassName="form__input-error-message"></div>
+                    <div className="form__input-error-message"></div>
                 </div>
                 
             {/* <!-- the placeholder would not work on a text area aproach
@@ -61,14 +61,14 @@ const Contact = () => {
              */}
                     
 
-                <div ClassName="form__input-group">
-                    <button ClassName="form__button" type="submit" value="submit">
+                <div className="form__input-group">
+                    <button className="form__button" type="submit" value="submit">
                         Continue
                     </button>
-                    <div ClassName="form__input-error-message"></div>
+                    <div className="form__input-error-message"></div>
                 </div>
-                <p ClassName="form__text">
-                    <Link ClassName="form__link" to="/Home" id="arrow"
+                <p className="form__text">
+                    <Link className="form__link" to="/Home" id="arrow"
                       >⬅︎</Link>
                 </p>
             </form>
