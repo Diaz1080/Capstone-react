@@ -4,11 +4,10 @@ import "./App.css"
 
 export const Template = ({urlLink8, header}) => {
   return (
-    
-      <div>
-      <Link to={urlLink8}>⇦</Link>
-     <span> 
-	   <h1>{header}</h1></span>
+
+        
+     <div className="col"> 
+	      <h1>{header}</h1>
      </div>
     
   );
@@ -63,7 +62,7 @@ export const Hour = ({ day, time }) => {
   );
 };
 
-export const Requirements = ({ text1, text2, text3, text4 }) => {
+export const Requirements = ({ text1, text2, text3, text4, text5, text6 }) => {
   return (
     <div className="col">
       <h4>Requirement:</h4>
@@ -72,6 +71,8 @@ export const Requirements = ({ text1, text2, text3, text4 }) => {
         <p>{text2}</p>
         <p>{text3}</p>
         <p>{text4}</p>
+        <p>{text5}</p>
+        <p>{text6}</p>
       </ul>
     </div>
   );

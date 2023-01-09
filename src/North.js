@@ -16,17 +16,19 @@ import Template, {
 const North = () => {
   return (
     
-
+    
       <div className="container-fluid">
-        <div>
-		<Link to="./Home">←</Link>
-		</div>
+        <div className="row" id="link">
+        <div className="col-1"><Link to="./Home">Home</Link></div>
         <Template 
-        urlLink8="./Home"
         header="North Side Pantry Information:"
         />
+		
+		</div>
+
+        
          
-        <div className="row">
+        <div className="row" id="row">
           <div className="col">
             <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
           </div>
@@ -58,7 +60,7 @@ const North = () => {
           />
         </div>
         {/* End Row 1 */}
-        <div className="row">
+        <div className="row" id="row">
         <div className="col">
           <Logo
             a="https://vineyardny.org/foodpantry"
@@ -80,8 +82,9 @@ const North = () => {
           text1="Photo ID."
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
-          text4="For Emergency assistance call (315) 407-8463."
-        />
+          text5="For Emergency assistance"
+          text6=" call (315) 407-8463."
+          />
         <SocialMediaHandles
           urlLink="http://instagram.com/vineyardNYsyracuse"
           image="./logos/ico-instagram.png"
@@ -90,7 +93,7 @@ const North = () => {
         />
       </div> 
         {/* End Row 2 */}
-        <div className="row">
+        <div className="row" id="row">
        
           <Logo a="" img="./logos/allfaiths.png" />
         
@@ -122,7 +125,7 @@ const North = () => {
         />
       </div>
         {/* End Row 3 */}
-        <div className="row">
+        <div className="row" id="row">
         <Logo a="https://claupc.org/syracuse/" img="./logos/cla.png" />
 
         <PantryInfo

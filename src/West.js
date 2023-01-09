@@ -18,14 +18,14 @@ const West = () => {
 	return (
 		
 		<div className="container-fluid">
-			<div>
-		<Link to="./Home">⇦</Link>
+			<div className="row" id="link">
+        <div className="col-1"><Link to="./Home">Home</Link></div>
+        <Template 
+        header="North Side Pantry Information:"
+        />
 		
 		</div>
-	<Template 
-       urlLink8="./"
-	   header="West Side Information:"
-		/>
+	
 	 
 	   <div className="row">
 		 <div className="col">
