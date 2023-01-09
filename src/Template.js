@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
+import "./App.css"
 
 
 export const Template = ({urlLink8, header}) => {
   return (
-    <div>
-      <h1>{header}</h1>
-      <p className="p text-left"> 
-	   <Link to={urlLink8}>←</Link></p> 
-    </div>
+    
+      <div>
+      <Link to={urlLink8}>⇦</Link>
+     <span> 
+	   <h1>{header}</h1></span>
+     </div>
+    
   );
 };
 // export const Header = ({urlLink8, header}) => {

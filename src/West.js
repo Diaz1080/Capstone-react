@@ -19,7 +19,8 @@ const West = () => {
 		
 		<div className="container-fluid">
 			<div>
-		<Link to="./Home">←</Link>
+		<Link to="./Home">⇦</Link>
+		
 		</div>
 	<Template 
        urlLink8="./"

@@ -16,9 +16,11 @@ import Template, {
 const South = () => {
 	return (
 		<div className="container-fluid">
-			<div>
-		<Link to="./Home">←</Link>
-		</div>
+		<div>	
+		 <Link to="./Home">←</Link> 
+		 
+		 </div>
+	
         <Template 
 		 urlLink8="./Home"
 		 header="South Side Pantry Information:"
