@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import "./App.css"
 
 const Home = () => {
   return (
@@ -42,12 +43,12 @@ const Home = () => {
       </nav>
       <section>
         <div className="row" id="north">
-          <div className="col-3">
+          <div className="col-3" >
             <h1>
               <Link to="/North">North</Link>
             </h1>
           </div>
-          <div className="col">
+          <div className="col-9">
             <ul>
               <li>Food Patries located in North Side of Syracuse.</li>
               <li>What areas are served.</li>
@@ -64,7 +65,7 @@ const Home = () => {
               <Link to="/East">East</Link>
             </h1>
           </div>
-          <div className="col">
+          <div className="col-9">
             <ul>
               <li>Food Patries located in East Side of Syracuse.</li>
               <li>What areas are served.</li>
@@ -81,7 +82,7 @@ const Home = () => {
               <Link to="/West">West</Link>
             </h1>
           </div>
-          <div className="col">
+          <div className="col-9">
             <ul>
               <li>Food Patries located in West Side of Syracuse.</li>
               <li>What areas are served.</li>
@@ -98,7 +99,7 @@ const Home = () => {
               <Link to="/South">South</Link>
             </h1>
           </div>
-          <div className="col">
+          <div className="col-9">
             <ul>
               <li>Food Patries located in South Side of Syracuse.</li>
               <li>What areas are served.</li>

@@ -40,7 +40,7 @@ Body {
   background-size: cover !important;
   background-position: center;
 }
-.row {
+#east, #west, #south, #north {
   width: 100%;
   height: 20vh;
   border: 5px solid;
@@ -66,5 +66,8 @@ a {
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: 50%;
+    
+  
   }
 }
+
