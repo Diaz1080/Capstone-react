@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-export const Template = (urlLink8, header) => {
+export const Template = ({urlLink8, header}) => {
   return (
     <div>
       <h1>{header}</h1>

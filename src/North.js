@@ -18,6 +18,9 @@ const North = () => {
     
 
       <div className="container-fluid">
+        <div>
+		<Link to="./Home">←</Link>
+		</div>
         <Template 
         urlLink8="./Home"
         header="North Side Pantry Information:"

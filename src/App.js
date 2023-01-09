@@ -21,9 +21,9 @@ function App() {
           <Route path="/South" element={<South />} />
           <Route path="/East" element={<East />} />
           <Route path="/West" element={<West />} />
-		  <Route path="/New" element={<New />} />
-		  <Route path="/Contact" element={<Contact />} />
-		  <Route path="/Signup" element={<Signup />} />
+		      <Route path="/New" element={<New />} />
+		      <Route path="/Contact" element={<Contact />} />
+		      <Route path="/Signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </div>
