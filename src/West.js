@@ -17,11 +17,10 @@ import Template, {
 const West = () => {
 	return (
 		<div className="container-fluid">
-			<Template />
-       <p className="p text-left"> 
-	   <Link to="./">←</Link></p> 
-	  <p> <h1>West Side Pantry Information:</h1></p>
-		
+			<Template 
+       urlLink8="./"
+	   header="West Side Information:"
+		/>
 	 
 	   <div className="row">
 		 <div className="col">

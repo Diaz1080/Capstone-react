@@ -15,11 +15,11 @@ import Template, {
 const East = () => {
 	return (
 		<div className="container-fluid">
-        <Template />
-		<p className="p text-left"> 
-	   <Link to="./">←</Link></p> 
-	  <p> <h1>South Side Pantry Information:</h1></p>
-	 
+        <Template 
+		urlLink8="./Home"
+		header="East Side Pantry Information:"
+		/>
+		
 	   <div className="row">
 		 <div className="col">
 		   <Logo a="" img="./logos/pantry.jpg" />

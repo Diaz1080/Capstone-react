@@ -18,11 +18,11 @@ const North = () => {
     
 
       <div className="container-fluid">
-        <Template />
-         <p className="p text-left"> 
-        <Link to="./">←</Link></p> 
-       <p> <h1>North Side Pantry Information:</h1></p>
-      
+        <Template 
+        urlLink8="./Home"
+        header="North Side Pantry Information:"
+        />
+         
         <div className="row">
           <div className="col">
             <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />

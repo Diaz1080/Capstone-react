@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
 
-export const Template = () => {
+export const Template = (urlLink8, header) => {
   return (
     <div>
-      <h1>Template</h1>
-      <Link to="/North, /South, /West, /East"></Link>
+      <h1>{header}</h1>
+      <p className="p text-left"> 
+	   <Link to={urlLink8}>←</Link></p> 
     </div>
   );
 };
