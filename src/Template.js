@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import North from "./North";
-import App from "./App";
+
 
 export const Template = () => {
   return (
@@ -24,7 +23,7 @@ export const Logo = ({ a, img }) => {
   return (
     <div className="col">
       <a href={a}>
-        <img src={img} id="sncc" />
+        <img src={img} id="sncc" alt="Logo"/>
       </a>
     </div>
   );
@@ -98,23 +97,23 @@ export const SocialMediaHandles = ({
       {image && (
         <span>
           <a href={urlLink}>
-            <img src={image} id="logo" />
+            <img src={image} id="logo" alt="Logo"/>
           </a>
         </span>
       )}
       <span>
         <a href={urlLink1}>
-          <img src={image1} id="logo" />
+          <img src={image1} id="logo" alt="Logo"/>
         </a>
       </span>
       <span>
         <a href={urlLink2}>
-          <img src={image2} id="logo" />
+          <img src={image2} id="logo" alt="Logo"/>
         </a>
       </span>
       <span>
         <a href={urlLink3}>
-          <img src={image3} id="logo" />
+          <img src={image3} id="logo" alt="Logo"/>
         </a>
       </span>
     </div>

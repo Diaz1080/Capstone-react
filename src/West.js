@@ -10,7 +10,6 @@ import Template, {
 	Fresh,
 	Mobile,
 	Finder,
-	Header
   } from "./Template";
 
 
@@ -18,6 +17,7 @@ import Template, {
 const West = () => {
 	return (
 		<div className="container-fluid">
+			<Template />
        <p className="p text-left"> 
 	   <Link to="./">←</Link></p> 
 	  <p> <h1>West Side Pantry Information:</h1></p>

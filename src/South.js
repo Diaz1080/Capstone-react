@@ -16,7 +16,7 @@ import Template, {
 const South = () => {
 	return (
 		<div className="container-fluid">
-        
+        <Template />
 		<p className="p text-left"> 
 	   <Link to="./">←</Link></p> 
 	  <p> <h1>South Side Pantry Information:</h1></p>

@@ -18,7 +18,7 @@ const North = () => {
     
 
       <div className="container-fluid">
-        
+        <Template />
          <p className="p text-left"> 
         <Link to="./">←</Link></p> 
        <p> <h1>North Side Pantry Information:</h1></p>
