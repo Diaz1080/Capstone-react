@@ -16,16 +16,16 @@ const East = () => {
 	return (
 		<div className="container-fluid">
 			<div className="row" id="link">
-        <div className="col-1">
+        
 			<Link to="./Home">Home</Link>
-			</div>
+	
         <Template 
-        header="North Side Pantry Information:"
+        header="East Side Pantry Information:"
         />
 		
 		</div>
 		
-	   <div className="row">
+	   <div className="row" id="row">
 		 <div className="col">
 		   <Logo a="" img="./logos/pantry.jpg" />
 		 </div>
@@ -50,7 +50,7 @@ const East = () => {
 		 />
 	   </div>
 	   {/* End Row 1 */}
-	   <div className="row">
+	   <div className="row" id="row">
 	   <div className="col">
 		 <Logo
 		   a=""
@@ -79,7 +79,7 @@ const East = () => {
 	   />
 	 </div> 
 	   {/* End Row 2 */}
-	   <div className="row">
+	   <div className="row" id="row">
 	  
 		 <Logo a="" img="./logos/pantry.jpg" />
 	   
@@ -104,7 +104,7 @@ const East = () => {
 	   />
 	 </div>
 	   {/* End Row 3 */}
-	   <div className="row">
+	   <div className="row" id="row">
 	   <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg" />
 
 	   <PantryInfo
