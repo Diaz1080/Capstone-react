@@ -10,6 +10,15 @@ export const Template = () => {
     </div>
   );
 };
+// export const Header = ({urlLink8, header}) => {
+//   return (
+//     <div>
+//     <p className="p text-left"> 
+// 	   <a to={urlLink8}>←</a></p> 
+// 	  <p> <h1>{header}</h1></p>
+//     </div>
+//   );
+// };
 
 export const Logo = ({ a, img }) => {
   return (

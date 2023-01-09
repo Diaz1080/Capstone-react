@@ -19,49 +19,42 @@ const South = () => {
         
 		<p className="p text-left"> 
 	   <Link to="./">←</Link></p> 
-	  <p> <h1>North Side Pantry Information:</h1></p>
+	  <p> <h1>South Side Pantry Information:</h1></p>
 	 
 	   <div className="row">
 		 <div className="col">
-		   <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
+		   <Logo a="" img="./logos/pantry.jpg" />
 		 </div>
 		 <PantryInfo
-		   bussinessName="Syracuse North East Community Center"
-		   bussinessName2="Food Pantry-Food Distribution Center"
-		   adress="716 Hawley Ave"
-		   cityStateZip="Syracuse NY 13203"
+		   bussinessName="Food Pantry"
+		   bussinessName2="Food Distribution Center"
+		   adress="Adress"
+		   cityStateZip="Syracuse NY "
 		 />
 		 <div className="col">
 		   <h4>Hours:</h4>
-		   <Hour day="MON" time="10AM - 12PM" />
-		   <Hour day="WED" time="10AM - 12PM" />
-		   <Hour day="THUR" time="2PM - 5PM" />
+		   <Hour day="MON" time="Closed" />
+		   <Hour day="WED" time="Closed" />
+		   <Hour day="THUR" time="Closed" />
 		 </div>
 		 <Requirements
 		   text1="First time user must fill"
 		   text2="out registration form."
 		 />
 		 <SocialMediaHandles
-		   urlLink="https://www.facebook.com/SNCCSYR"
-		   image="./logos/ico-facebook.png"
-		   urlLink1="https://twitter.com/SNCCSYR"
-		   image1="./logos/ico-twitter.png"
-		   urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
-		   image2="./logos/ico-linkedin.png"
-		   urlLink3="https://www.instagram.com/sncc315/"
-		   image3="./logos/ico-instagram.png"
+		 
 		 />
 	   </div>
 	   {/* End Row 1 */}
 	   <div className="row">
 	   <div className="col">
 		 <Logo
-		   a="https://vineyardny.org/foodpantry"
-		   img="./logos/vineyardlogo.png"
+		   a=""
+		   img="./logos/pantry.jpg"
 		 />
 	   </div>
 	   <PantryInfo
-		 bussinessName="Vineyard Church Food Distribution"
+		 bussinessName="Food Pantry"
 		 bussinessName2=""
 		 adress="5oo Butternut Street"
 		 cityStateZip="Syracuse NY 13208"
@@ -78,19 +71,16 @@ const South = () => {
 		 text4="For Emergency assistance call ."
 	   />
 	   <SocialMediaHandles
-		 urlLink="http://instagram.com/vineyardNYsyracuse"
-		 image="./logos/ico-instagram.png"
-		 urlLink1="https://www.facebook.com/vineyardnysyracuse/"
-		 image1="./logos/ico-facebook.png"
+		
 	   />
 	 </div> 
 	   {/* End Row 2 */}
 	   <div className="row">
 	  
-		 <Logo a="" img="./logos/allfaiths.png" />
+		 <Logo a="" img="./logos/pantry.jpg" />
 	   
 	   <PantryInfo
-		 bussinessName="All Faiths Food Pantry"
+		 bussinessName="Food Pantry"
 		 bussinessName2=""
 		 adress="406 Court ST"
 		 cityStateZip="Syracuse NY 13203"
@@ -106,22 +96,15 @@ const South = () => {
 		 text3="Proof of any adult and children in household."
 	   />
 	   <SocialMediaHandles
-		 urlLink=""
-		 image="./logos/ico-facebook.png"
-		 urlLink1=""
-		 image1="./logos/ico-twitter.png"
-		 urlLink2=""
-		 image2="./logos/ico-linkedin.png"
-		 urlLink3=""
-		 image3="./logos/ico-instagram.png"
+		
 	   />
 	 </div>
 	   {/* End Row 3 */}
 	   <div className="row">
-	   <Logo a="https://claupc.org/syracuse/" img="./logos/cla.png" />
+	   <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg" />
 
 	   <PantryInfo
-		 bussinessName="Christian Life Assembly Church"
+		 bussinessName="Food Pantry"
 		 bussinessName2="Food Distribution Center"
 		 adress="1025 N.Townsend ST"
 		 cityStateZip="Syracuse NY 13208"
