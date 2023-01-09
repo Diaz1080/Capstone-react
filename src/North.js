@@ -6,23 +6,23 @@ import Template, {
   Hour,
   Requirements,
   SocialMediaHandles,
+  FoodBank,
+  Fresh,
+  Mobile,
+  Finder
 } from "./Template";
-import App from "./App";
+
 
 const North = () => {
   return (
-    <div>
-      
-      <Link to="/South">South</Link>
-      <Link to="/East">East</Link>
-      <Link to="/West">West</Link>
+    
 
       <div className="container-fluid">
-        {/* <p className="p text-left">
-        <a href="index.html">←</a>
-      </p> */}
-
-        <h1>North Side Pantry Information:</h1>
+        
+         <p className="p text-left"> 
+        <Link to="./">←</Link></p> 
+       <p> <h1>North Side Pantry Information:</h1></p>
+      
         <div className="row">
           <div className="col">
             <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
@@ -55,7 +55,7 @@ const North = () => {
           />
         </div>
         {/* End Row 1 */}
-        {/* <div className="row">
+        <div className="row">
         <div className="col">
           <Logo
             a="https://vineyardny.org/foodpantry"
@@ -85,9 +85,9 @@ const North = () => {
           urlLink1="https://www.facebook.com/vineyardnysyracuse/"
           image1="./logos/ico-facebook.png"
         />
-      </div> */}
+      </div> 
         {/* End Row 2 */}
-        {/* <div className="row">
+        <div className="row">
        
           <Logo a="" img="./logos/allfaiths.png" />
         
@@ -117,9 +117,9 @@ const North = () => {
           urlLink3=""
           image3="./logos/ico-instagram.png"
         />
-      </div> */}
+      </div>
         {/* End Row 3 */}
-        {/* <div className="row">
+        <div className="row">
         <Logo a="https://claupc.org/syracuse/" img="./logos/cla.png" />
 
         <PantryInfo
@@ -140,9 +140,9 @@ const North = () => {
         />
 
         <SocialMediaHandles />
-      </div> */}
+      </div>
         {/* End Row 4 */}
-        {/* <div className="row" id="pantry">
+        <div className="row" id="pantry">
         <FoodBank
           urlLink4="https://www.foodbankcny.org/"
           bussinessName4="Food Bank"
@@ -181,9 +181,9 @@ const North = () => {
           urlLink3="http://twitter.com/foodbankofcny"
           image3="logos/ico-twitter.png"
         />
-      </div> */}
       </div>
-    </div>
+      </div>
+    
   );
 };
 

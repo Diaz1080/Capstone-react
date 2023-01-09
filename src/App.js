@@ -7,7 +7,8 @@ import East from "./East";
 import Home from "./Home";
 import New from "./New";
 import Contact from "./Contact";
-import Signup from "./Signup"
+import Signup from "./Signup";
+
 
 function App() {
   return (

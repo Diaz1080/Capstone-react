@@ -33,9 +33,9 @@ const Home = () => {
               <Link className="nav-link active" to="/South">
                 South
               </Link>
-              {/* <link className="nav-link active" to="/Contact">Contact Form </Link> */}
-              {/* <Link className="nav-link active" to="/New">New Pantry Request </Link> */}
-              {/* <Link className="nav-link active" to="/Signup">Pantry Signup/Login </Link> */}
+              <Link className="nav-link active" to="/Contact">Contact Form </Link>
+              <Link className="nav-link active" to="/New">New Pantry Request </Link>
+              <Link className="nav-link active" to="/Signup">Pantry Signup/Login </Link>
             </div>
           </div>
         </div>
