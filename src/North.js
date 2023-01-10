@@ -75,7 +75,8 @@ const North = () => {
         <Requirements
           text1="Photo ID."
           text2="Proof of adress."
-          text3="Proof of any adult and children in household."
+          text3="Proof of any adult and "
+          text4="children in household."
           text5="For Emergency assistance"
           text6=" call (315) 407-8463."
         />

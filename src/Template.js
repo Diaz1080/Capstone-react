@@ -103,20 +103,22 @@ export const SocialMediaHandles = ({
       )}
       <span>
         <a href={urlLink1}>
-          <img src={image1} id="logo" alt="Logo" />
+          <img src={image1} id="logo"  />
         </a>
       </span>
       <span>
         <a href={urlLink2}>
-          <img src={image2} id="logo" alt="Logo" />
+          <img src={image2} id="logo"  />
         </a>
       </span>
       <span>
         <a href={urlLink3}>
-          <img src={image3} id="logo" alt="Logo" />
+          <img src={image3} id="logo"  />
         </a>
       </span>
+    
     </div>
+    
   );
 };
 export const FoodBank = ({

@@ -31,6 +31,7 @@ const West = () => {
           bussinessName2="Food Distribution Center"
           adress="Adress"
           cityStateZip="Syracuse NY "
+          phone="phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -51,10 +52,10 @@ const West = () => {
         </div>
         <PantryInfo
           bussinessName="Food Pantry"
-          bussinessName2=""
-          adress="5oo Butternut Street"
-          cityStateZip="Syracuse NY 13208"
-          phone="(315) 883-0026"
+          bussinessName2="Food Distribution Center"
+          adress="Adress"
+          cityStateZip="Syracuse NY "
+          phone="phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -74,10 +75,10 @@ const West = () => {
 
         <PantryInfo
           bussinessName="Food Pantry"
-          bussinessName2=""
-          adress="406 Court ST"
-          cityStateZip="Syracuse NY 13203"
-          phone="(315)478-0916"
+          bussinessName2="Food Distribution Center"
+          adress="Adress"
+          cityStateZip="Syracuse NY "
+          phone="phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -97,9 +98,9 @@ const West = () => {
         <PantryInfo
           bussinessName="Food Pantry"
           bussinessName2="Food Distribution Center"
-          adress="1025 N.Townsend ST"
-          cityStateZip="Syracuse NY 13208"
-          phone="(315)478-2878"
+          adress="Adress"
+          cityStateZip="Syracuse NY "
+          phone="phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
