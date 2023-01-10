@@ -15,10 +15,11 @@ import "./News.scss";
 const East = () => {
   return (
     <div className="container-fluid news">
-      <div className="row" id="link">
-        <Link to="./Home">Home</Link>
-
-        <Template header="East Side Pantry Information:" />
+    <div className="row" id="link">
+        <div className="col-1">
+          <Link to="/">⇦</Link>
+        </div>
+        <Template header="South Side Pantry Information:" />
       </div>
 
       <div className="row" id="row">
