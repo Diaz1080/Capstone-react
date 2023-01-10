@@ -97,7 +97,7 @@ export const SocialMediaHandles = ({
       {image && (
         <span>
           <a href={urlLink}>
-            <img src={image} id="logo" alt="Logo" />
+            <img src={image} id="logo" />
           </a>
         </span>
       )}

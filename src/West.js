@@ -24,14 +24,14 @@ const West = () => {
 
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg" />
+          <Logo a="https://www.peace-caa.org/programs/frc/wsfrc/" img="./logos/peace.png" />
         </div>
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="PEACE INC"
+          bussinessName2="Westside Family Resource Center"
+          adress="200 Wyoming Street"
+          cityStateZip="Syracuse NY 13204"
+          phone="(315) 470-3352"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -43,7 +43,15 @@ const West = () => {
           text1="First time user must fill"
           text2="out registration form."
         />
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+             urlLink="https://www.facebook.com/PEACEIncSyr/"
+             image="./logos/ico-facebook.png"
+             urlLink1="https://twitter.com/PeaceIncSyr"
+             image1="./logos/ico-twitter.png"
+             urlLink2="https://www.pinterest.com/PeaceIncSyr/"
+             image2="./logos/ico-instagram.png"
+        />
+        
       </div>
       {/* End Row 1 */}
       <div className="row" id="row">

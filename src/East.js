@@ -24,26 +24,30 @@ const East = () => {
 
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg" />
+          <Logo a="https://westcottcc.org/food-pantry/" img="./logos/westcott.png" />
         </div>
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone#"
+          bussinessName="Westcott Community Center"
+          bussinessName2="Basic Needs Pantry"
+          adress="826 Euclid Ave"
+          cityStateZip="Syracuse NY 13210"
+          phone="(315) 478.8634 ext. 0"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="MON" time="Closed" />
-          <Hour day="WED" time="Closed" />
-          <Hour day="THUR" time="Closed" />
+          <Hour day="MON twice Monthly" time="1PM - 3PM" />
+         
         </div>
         <Requirements
-          text1="First time user must fill"
-          text2="out registration form."
+          text1="Must live in zip codes "
+          text2="13210, 13224."
+          text3="Must sign paper attesting to "
+          text4="low income status."
         />
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+        urlLink="https://www.facebook.com/westcottcommunitycenter/"
+        image="./logos/ico-facebook.png"
+        />
       </div>
       {/* End Row 1 */}
       <div className="row" id="row">
