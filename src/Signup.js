@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Main.css"
+import "./Main.scss";
 
 const Signup = () => {
-	return (
-		<div className="container">
+  return (
+    <div className="container main">
       <form className="form" id="login">
         <h1 className="form__title">Login</h1>
         <div className="form__message form__message--error"></div>
@@ -27,13 +27,22 @@ const Signup = () => {
           <div className="form__input-error-message"></div>
         </div>
 
-        <button className="form__button" type="submit">Continue</button>
+        <button className="form__button" type="submit">
+          Continue
+        </button>
         <p className="form__text">
-          <Link to="#" className="form__link">Forgot your password?</Link>
+          <Link to="#" className="form__link">
+            Forgot your password?
+          </Link>
         </p>
         <p className="form__text">
-          <Link className="form__link" to="/createAccount" id="linkCreateAccount"
-            >Don't have an account? Create account</Link>
+          <Link
+            className="form__link"
+            to="/createAccount"
+            id="linkCreateAccount"
+          >
+            Don't have an account? Create account
+          </Link>
         </p>
       </form>
       {/*form--hidden on form className taken out to show the creat page */}
@@ -78,15 +87,18 @@ const Signup = () => {
           />
           <div className="form__input-error-message"></div>
         </div>
-        <button className="form__button" type="submit">Continue</button>
+        <button className="form__button" type="submit">
+          Continue
+        </button>
 
         <p className="form__text">
-          <Link className="form__link" to="/" id="linkLogin"
-            >Already have an account? Sign In</Link>
+          <Link className="form__link" to="/" id="linkLogin">
+            Already have an account? Sign In
+          </Link>
         </p>
       </form>
     </div>
-	);
+  );
 };
 
 export default Signup;

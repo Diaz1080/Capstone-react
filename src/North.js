@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./App.css";
 import Template, {
   Logo,
   PantryInfo,
@@ -9,58 +8,53 @@ import Template, {
   FoodBank,
   Fresh,
   Mobile,
-  Finder
+  Finder,
 } from "./Template";
-
+import "./News.scss";
 
 const North = () => {
   return (
-    
-    
-      <div className="container-fluid">
-        <div className="row" id="link">
-        <div className="col-1"><Link to="./Home">Home</Link></div>
-        <Template 
-        header="North Side Pantry Information:"
-        />
-		
-		</div>
-
-        
-         
-        <div className="row" id="row">
-          <div className="col">
-            <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
-          </div>
-          <PantryInfo
-            bussinessName="Syracuse North East Community Center"
-            bussinessName2="Food Pantry-Food Distribution Center"
-            adress="716 Hawley Ave"
-            cityStateZip="Syracuse NY 13203"
-          />
-          <div className="col">
-            <h4>Hours:</h4>
-            <Hour day="MON" time="10AM - 12PM" />
-            <Hour day="WED" time="10AM - 12PM" />
-            <Hour day="THUR" time="2PM - 5PM" />
-          </div>
-          <Requirements
-            text1="First time user must fill"
-            text2="out registration form."
-          />
-          <SocialMediaHandles
-            urlLink="https://www.facebook.com/SNCCSYR"
-            image="./logos/ico-facebook.png"
-            urlLink1="https://twitter.com/SNCCSYR"
-            image1="./logos/ico-twitter.png"
-            urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
-            image2="./logos/ico-linkedin.png"
-            urlLink3="https://www.instagram.com/sncc315/"
-            image3="./logos/ico-instagram.png"
-          />
+    <div className="container-fluid news">
+      <div className="row" id="link">
+        <div className="col-1">
+          <Link to="/">⇦</Link>
         </div>
-        {/* End Row 1 */}
-        <div className="row" id="row">
+        <Template header="North Side Pantry Information:" />
+      </div>
+
+      <div className="row" id="row">
+        <div className="col">
+          <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
+        </div>
+        <PantryInfo
+          bussinessName="Syracuse North East Community Center"
+          bussinessName2="Food Pantry-Food Distribution Center"
+          adress="716 Hawley Ave"
+          cityStateZip="Syracuse NY 13203"
+        />
+        <div className="col">
+          <h4>Hours:</h4>
+          <Hour day="MON" time="10AM - 12PM" />
+          <Hour day="WED" time="10AM - 12PM" />
+          <Hour day="THUR" time="2PM - 5PM" />
+        </div>
+        <Requirements
+          text1="First time user must fill"
+          text2="out registration form."
+        />
+        <SocialMediaHandles
+          urlLink="https://www.facebook.com/SNCCSYR"
+          image="./logos/ico-facebook.png"
+          urlLink1="https://twitter.com/SNCCSYR"
+          image1="./logos/ico-twitter.png"
+          urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
+          image2="./logos/ico-linkedin.png"
+          urlLink3="https://www.instagram.com/sncc315/"
+          image3="./logos/ico-instagram.png"
+        />
+      </div>
+      {/* End Row 1 */}
+      <div className="row" id="row">
         <div className="col">
           <Logo
             a="https://vineyardny.org/foodpantry"
@@ -84,19 +78,18 @@ const North = () => {
           text3="Proof of any adult and children in household."
           text5="For Emergency assistance"
           text6=" call (315) 407-8463."
-          />
+        />
         <SocialMediaHandles
           urlLink="http://instagram.com/vineyardNYsyracuse"
           image="./logos/ico-instagram.png"
           urlLink1="https://www.facebook.com/vineyardnysyracuse/"
           image1="./logos/ico-facebook.png"
         />
-      </div> 
-        {/* End Row 2 */}
-        <div className="row" id="row">
-       
-          <Logo a="" img="./logos/allfaiths.png" />
-        
+      </div>
+      {/* End Row 2 */}
+      <div className="row" id="row">
+        <Logo a="" img="./logos/allfaiths.png" />
+
         <PantryInfo
           bussinessName="All Faiths Food Pantry"
           bussinessName2=""
@@ -124,8 +117,8 @@ const North = () => {
           image3="./logos/ico-instagram.png"
         />
       </div>
-        {/* End Row 3 */}
-        <div className="row" id="row">
+      {/* End Row 3 */}
+      <div className="row" id="row">
         <Logo a="https://claupc.org/syracuse/" img="./logos/cla.png" />
 
         <PantryInfo
@@ -147,8 +140,8 @@ const North = () => {
 
         <SocialMediaHandles />
       </div>
-        {/* End Row 4 */}
-        <div className="row" id="pantry">
+      {/* End Row 4 */}
+      <div className="row" id="pantry">
         <FoodBank
           urlLink4="https://www.foodbankcny.org/"
           bussinessName4="Food Bank"
@@ -188,8 +181,7 @@ const North = () => {
           image3="logos/ico-twitter.png"
         />
       </div>
-      </div>
-    
+    </div>
   );
 };
 

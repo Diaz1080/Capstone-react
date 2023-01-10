@@ -1,22 +1,17 @@
 import { Link } from "react-router-dom";
-import "./App.css"
 
-
-export const Template = ({urlLink8, header}) => {
+export const Template = ({ urlLink8, header }) => {
   return (
-
-        
-     <div className="col"> 
-	      <h1>{header}</h1>
-     </div>
-    
+    <div className="col">
+      <h1>{header}</h1>
+    </div>
   );
 };
 // export const Header = ({urlLink8, header}) => {
 //   return (
 //     <div>
-//     <p className="p text-left"> 
-// 	   <a to={urlLink8}>←</a></p> 
+//     <p className="p text-left">
+// 	   <a to={urlLink8}>←</a></p>
 // 	  <p> <h1>{header}</h1></p>
 //     </div>
 //   );
@@ -26,7 +21,7 @@ export const Logo = ({ a, img }) => {
   return (
     <div className="col">
       <a href={a}>
-        <img src={img} id="sncc" alt="Logo"/>
+        <img src={img} id="sncc" alt="Logo" />
       </a>
     </div>
   );
@@ -102,23 +97,23 @@ export const SocialMediaHandles = ({
       {image && (
         <span>
           <a href={urlLink}>
-            <img src={image} id="logo" alt="Logo"/>
+            <img src={image} id="logo" alt="Logo" />
           </a>
         </span>
       )}
       <span>
         <a href={urlLink1}>
-          <img src={image1} id="logo" alt="Logo"/>
+          <img src={image1} id="logo" alt="Logo" />
         </a>
       </span>
       <span>
         <a href={urlLink2}>
-          <img src={image2} id="logo" alt="Logo"/>
+          <img src={image2} id="logo" alt="Logo" />
         </a>
       </span>
       <span>
         <a href={urlLink3}>
-          <img src={image3} id="logo" alt="Logo"/>
+          <img src={image3} id="logo" alt="Logo" />
         </a>
       </span>
     </div>

@@ -1,0 +1,95 @@
+.news {
+  background: orange;
+  height: 100;
+  font-weight: bold;
+
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  .container {
+    border: 20px;
+    border-color: blue;
+  }
+  #row {
+    margin: 1rem;
+    border: solid 2px;
+    border-color: blue;
+    min-height: 20vh;
+    border-radius: 5px;
+  }
+  #pantry {
+    padding-top: 2rem !important;
+    margin-top: 2rem;
+    text-align: center;
+    background: blue;
+    color: white;
+  }
+  h1 {
+    margin-left: 100px;
+    
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+  }
+  #col-2 {
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #col-5 {
+    font-size: 25px;
+  }
+  #col-6 {
+    margin-top: 0;
+  }
+  p,
+  h4,
+  h5,
+  ul {
+    margin: 0px;
+    margin-top: 0;
+    color: white;
+  }
+  Link {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    section:nth-child(2) input {
+      width: 100%;
+    } /*targets specific devices with known width */
+  }
+  @media only screen and (max-width: 400px) {
+    h1 {
+      font-size: 50%;
+    }
+  }
+  div {
+    white-space: nowrap;
+     overflow: hidden; 
+  }
+  .p {
+    font-size: 50px;
+  }
+
+  #hours {
+    font-size: 15px;
+  }
+  img {
+    width: 20vh;
+    border-radius: 90px;
+    margin-top: 10px;
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+  .col-1 {
+    color: White;
+  }
+}

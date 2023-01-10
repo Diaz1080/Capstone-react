@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Home.css";
-import "./App.css"
+import "./Home.scss";
 
 const Home = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="homePage">
       <nav className="navbar navbar-expand-lg navbar-light bg-primary" id="nav">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/Home"></Link>
@@ -34,16 +33,22 @@ const Home = () => {
               <Link className="nav-link active" to="/South">
                 South
               </Link>
-              <Link className="nav-link active" to="/Contact">Contact Form </Link>
-              <Link className="nav-link active" to="/New">New Pantry Request </Link>
-              <Link className="nav-link active" to="/Signup">Pantry Signup/Login </Link>
+              <Link className="nav-link active" to="/Contact">
+                Contact Form{" "}
+              </Link>
+              <Link className="nav-link active" to="/New">
+                New Pantry Request{" "}
+              </Link>
+              <Link className="nav-link active" to="/Signup">
+                Pantry Signup/Login{" "}
+              </Link>
             </div>
           </div>
         </div>
       </nav>
       <section>
         <div className="row" id="north">
-          <div className="col-3" >
+          <div className="col-3">
             <h1>
               <Link to="/North">North</Link>
             </h1>
