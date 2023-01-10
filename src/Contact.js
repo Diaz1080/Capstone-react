@@ -70,7 +70,7 @@ const Contact = () => {
           <div className="form__input-error-message"></div>
         </div>
         <p className="form__text">
-          <Link className="form__link" to="/Home" id="arrow">
+          <Link className="form__link" to="/" id="arrow">
             ⬅︎
           </Link>
         </p>

@@ -108,8 +108,8 @@ const New = () => {
           <div className="form__input-error-message"></div>
         </div>
         <p className="form__text">
-          <Link className="form__link" to="/Home" id="arrow">
-            Home
+          <Link className="form__link" to="/" id="arrow">
+            ⇦
           </Link>
         </p>
       </form>
