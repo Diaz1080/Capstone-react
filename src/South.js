@@ -17,7 +17,7 @@ const South = () => {
     <div className="container-fluid news">
       <div className="row" id="link">
         <div className="col-1">
-          <Link to="/">⇦</Link>
+          <Link to="/" id="arrow">⇦</Link>
         </div>
         <Template header="South Side Pantry Information:" />
       </div>

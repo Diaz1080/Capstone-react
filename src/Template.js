@@ -131,7 +131,7 @@ export const FoodBank = ({
   return (
     <div className="col">
       <h4>
-        <a href={urlLink4}>{bussinessName4}</a> {bussinessName5}
+        <a href={urlLink4} id="arrow">{bussinessName4}</a> {bussinessName5}
       </h4>
       <h4>{bussinessName6}</h4>
       <p>{adress2}</p>
@@ -145,7 +145,7 @@ export const Finder = ({ finder1, finder2, urlLink5, finder3 }) => {
     <div className="col">
       <p>{finder1}</p>
       <p>{finder2}</p>
-      <a href={urlLink5}>{finder3}</a>
+      <Link href={urlLink5} id="arrow">{finder3} </Link>
     </div>
   );
 };

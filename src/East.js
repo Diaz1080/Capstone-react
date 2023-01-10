@@ -16,10 +16,10 @@ const East = () => {
   return (
     <div className="container-fluid news">
     <div className="row" id="link">
-        <div className="col-1">
-          <Link to="/">⇦</Link>
+        <div className="col-1" >
+          <Link to="/" id="arrow">⇦</Link>
         </div>
-        <Template header="South Side Pantry Information:" />
+        <Template header="East Side Pantry Information:" />
       </div>
 
       <div className="row" id="row">
