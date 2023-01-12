@@ -9,64 +9,61 @@ import Template, {
   Fresh,
   Mobile,
   Finder,
-} from "./Template";
+} from "../Template";
 import "./News.scss";
 
-const North = () => {
+const East = () => {
   return (
     <div className="container-fluid news">
       <div className="row" id="link">
         <div className="col-1">
-          <Link to="/" id="arrow">⇦</Link>
+          <Link to="/" id="arrow">
+            ⇦
+          </Link>
         </div>
-        <Template header="North Side Pantry Information:" />
+        <Template header="East Side Pantry Information:" />
       </div>
 
       <div className="row" id="row">
         <div className="col">
-          <Logo a="https://www.snccsyr.org/" img="./logos/sncc.png" />
+          <Logo
+            a="https://westcottcc.org/food-pantry/"
+            img="./logos/westcott.png"
+          />
         </div>
         <PantryInfo
-          bussinessName="Syracuse North East Community Center"
-          bussinessName2="Food Pantry-Food Distribution Center"
-          adress="716 Hawley Ave"
-          cityStateZip="Syracuse NY 13203"
+          bussinessName="Westcott Community Center"
+          bussinessName2="Basic Needs Pantry"
+          adress="826 Euclid Ave"
+          cityStateZip="Syracuse NY 13210"
+          phone="(315) 478.8634 ext. 0"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="MON" time="10AM - 12PM" />
-          <Hour day="WED" time="10AM - 12PM" />
-          <Hour day="THUR" time="2PM - 5PM" />
+          <Hour day="MON twice Monthly" time="1PM - 3PM" />
         </div>
         <Requirements
-          text1="First time user must fill"
-          text2="out registration form."
+          text1="Must live in zip codes "
+          text2="13210, 13224."
+          text3="Must sign paper attesting to "
+          text4="low income status."
         />
         <SocialMediaHandles
-          urlLink="https://www.facebook.com/SNCCSYR"
+          urlLink="https://www.facebook.com/westcottcommunitycenter/"
           image="./logos/ico-facebook.png"
-          urlLink1="https://twitter.com/SNCCSYR"
-          image1="./logos/ico-twitter.png"
-          urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
-          image2="./logos/ico-linkedin.png"
-          urlLink3="https://www.instagram.com/sncc315/"
-          image3="./logos/ico-instagram.png"
         />
       </div>
       {/* End Row 1 */}
       <div className="row" id="row">
         <div className="col">
-          <Logo
-            a="https://vineyardny.org/foodpantry"
-            img="./logos/vineyardlogo.png"
-          />
+          <Logo a="" img="./logos/pantry.jpg" />
         </div>
         <PantryInfo
-          bussinessName="Vineyard Church Food Distribution"
-          bussinessName2=""
-          adress="5oo Butternut Street"
-          cityStateZip="Syracuse NY 13208"
-          phone="(315) 883-0026"
+          bussinessName="Food Pantry"
+          bussinessName2="Food Distribution Center"
+          adress="adress"
+          cityStateZip="Syracuse NY "
+          phone="phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -75,28 +72,21 @@ const North = () => {
         <Requirements
           text1="Photo ID."
           text2="Proof of adress."
-          text3="Proof of any adult and "
-          text4="children in household."
-          text5="For Emergency assistance"
-          text6=" call (315) 407-8463."
+          text3="Proof of any adult and children in household."
+          text4="For Emergency assistance call ."
         />
-        <SocialMediaHandles
-          urlLink="http://instagram.com/vineyardNYsyracuse"
-          image="./logos/ico-instagram.png"
-          urlLink1="https://www.facebook.com/vineyardnysyracuse/"
-          image1="./logos/ico-facebook.png"
-        />
+        <SocialMediaHandles />
       </div>
       {/* End Row 2 */}
       <div className="row" id="row">
-        <Logo a="" img="./logos/allfaiths.png" />
+        <Logo a="" img="./logos/pantry.jpg" />
 
         <PantryInfo
-          bussinessName="All Faiths Food Pantry"
-          bussinessName2=""
-          adress="406 Court ST"
-          cityStateZip="Syracuse NY 13203"
-          phone="(315)478-0916"
+          bussinessName="Food Pantry"
+          bussinessName2="Food Distribution Center"
+          adress="adress"
+          cityStateZip="Syracuse NY "
+          phone="Phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -107,27 +97,18 @@ const North = () => {
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
         />
-        <SocialMediaHandles
-          urlLink=""
-          image="./logos/ico-facebook.png"
-          urlLink1=""
-          image1="./logos/ico-twitter.png"
-          urlLink2=""
-          image2="./logos/ico-linkedin.png"
-          urlLink3=""
-          image3="./logos/ico-instagram.png"
-        />
+        <SocialMediaHandles />
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">
-        <Logo a="https://claupc.org/syracuse/" img="./logos/cla.png" />
+        <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg" />
 
         <PantryInfo
-          bussinessName="Christian Life Assembly Church"
+          bussinessName="Food Pantry"
           bussinessName2="Food Distribution Center"
-          adress="1025 N.Townsend ST"
-          cityStateZip="Syracuse NY 13208"
-          phone="(315)478-2878"
+          adress="adress"
+          cityStateZip="Syracuse NY "
+          phone="phone #"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -186,4 +167,4 @@ const North = () => {
   );
 };
 
-export default North;
+export default East;

@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import North from "./North";
-import South from "./South";
-import West from "./West";
-import East from "./East";
-import Home from "./Home";
-import New from "./New";
-import Contact from "./Contact";
-import Signup from "./Signup";
+import North from "./pages/North";
+import South from "./pages/South";
+import West from "./pages/West";
+import East from "./pages/East";
+import Home from "./home/Home";
+import New from "./contact/New";
+import Contact from "./contact/Contact";
+import Signup from "./contact/Signup";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/Home/Home" element={<Home />} />
           <Route path="/North" element={<North />} />
           <Route path="/South" element={<South />} />
           <Route path="/East" element={<East />} />

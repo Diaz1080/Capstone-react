@@ -9,7 +9,7 @@ import Template, {
   Fresh,
   Mobile,
   Finder,
-} from "./Template";
+} from "../Template";
 import "./News.scss";
 
 const West = () => {
@@ -17,14 +17,19 @@ const West = () => {
     <div className="container-fluid news">
       <div className="row" id="link">
         <div className="col-1">
-          <Link to="/" id="arrow">⇦</Link>
+          <Link to="/" id="arrow">
+            ⇦
+          </Link>
         </div>
         <Template header="West Side Pantry Information:" />
       </div>
 
       <div className="row" id="row">
         <div className="col">
-          <Logo a="https://www.peace-caa.org/programs/frc/wsfrc/" img="./logos/peace.png" />
+          <Logo
+            a="https://www.peace-caa.org/programs/frc/wsfrc/"
+            img="./logos/peace.png"
+          />
         </div>
         <PantryInfo
           bussinessName="PEACE INC"
@@ -43,15 +48,14 @@ const West = () => {
           text1="First time user must fill"
           text2="out registration form."
         />
-        <SocialMediaHandles 
-             urlLink="https://www.facebook.com/PEACEIncSyr/"
-             image="./logos/ico-facebook.png"
-             urlLink1="https://twitter.com/PeaceIncSyr"
-             image1="./logos/ico-twitter.png"
-             urlLink2="https://www.pinterest.com/PeaceIncSyr/"
-             image2="./logos/ico-instagram.png"
+        <SocialMediaHandles
+          urlLink="https://www.facebook.com/PEACEIncSyr/"
+          image="./logos/ico-facebook.png"
+          urlLink1="https://twitter.com/PeaceIncSyr"
+          image1="./logos/ico-twitter.png"
+          urlLink2="https://www.pinterest.com/PeaceIncSyr/"
+          image2="./logos/ico-instagram.png"
         />
-        
       </div>
       {/* End Row 1 */}
       <div className="row" id="row">
