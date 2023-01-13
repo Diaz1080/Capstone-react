@@ -9,7 +9,7 @@ import Template, {
   Fresh,
   Mobile,
   Finder,
-} from "../Template";
+} from "../pages/Template";
 import "./News.scss";
 
 const North = () => {

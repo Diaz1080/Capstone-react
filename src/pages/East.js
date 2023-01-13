@@ -9,7 +9,7 @@ import Template, {
   Fresh,
   Mobile,
   Finder,
-} from "../Template";
+} from "../pages/Template";
 import "./News.scss";
 
 const East = () => {
@@ -28,7 +28,7 @@ const East = () => {
         <div className="col">
           <Logo
             a="https://westcottcc.org/food-pantry/"
-            img="./logos/westcott.png"
+            img="./logos/westcott.png"  alt="logo"
           />
         </div>
         <PantryInfo
@@ -50,13 +50,13 @@ const East = () => {
         />
         <SocialMediaHandles
           urlLink="https://www.facebook.com/westcottcommunitycenter/"
-          image="./logos/ico-facebook.png"
+          image="./logos/ico-facebook.png" alt="logo"
         />
       </div>
       {/* End Row 1 */}
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg" />
+          <Logo a="" img="./logos/pantry.jpg"  alt="logo"/>
         </div>
         <PantryInfo
           bussinessName="Food Pantry"
@@ -79,7 +79,7 @@ const East = () => {
       </div>
       {/* End Row 2 */}
       <div className="row" id="row">
-        <Logo a="" img="./logos/pantry.jpg" />
+        <Logo a="" img="./logos/pantry.jpg"  alt="logo"/>
 
         <PantryInfo
           bussinessName="Food Pantry"
@@ -101,7 +101,7 @@ const East = () => {
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">
-        <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg" />
+        <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg"  alt="logo"/>
 
         <PantryInfo
           bussinessName="Food Pantry"
@@ -154,13 +154,13 @@ const East = () => {
         />
         <SocialMediaHandles
           urlLink="http://www.facebook.com/foodbankcny"
-          image="./logos/ico-facebook.png"
+          image="./logos/ico-facebook.png"  
           urlLink1="http://instagram.com/foodbankofcny"
-          image1="./logos/ico-instagram.png"
+          image1="./logos/ico-instagram.png " 
           urlLink2="http://www.linkedin.com/company/food-bank-of-central-new-york"
-          image2="./logos/ico-linkedin.png"
+          image2="./logos/ico-linkedin.png"  
           urlLink3="http://twitter.com/foodbankofcny"
-          image3="logos/ico-twitter.png"
+          image3="logos/ico-twitter.png"  
         />
       </div>
     </div>
