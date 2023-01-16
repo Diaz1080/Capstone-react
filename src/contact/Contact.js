@@ -3,7 +3,7 @@ import "./Main.scss";
 
 const Contact = () => {
   return (
-    <div className="container main">
+    <div className="container-main main">
       <form
         className="form"
         method="POST"

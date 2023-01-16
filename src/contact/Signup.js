@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./Main.scss";
 
 const Signup = () => {
+  const [showSignup, setShowSignup] = useState(false);
   return (
-    <div className="container main">
-      <form className="form" id="login">
+    <div className="container-main main">
+      <form className={`form ${showSignup ? "form--hidden" : ""}`} id="login">
         <h1 className="form__title">Login</h1>
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
@@ -36,17 +38,22 @@ const Signup = () => {
           </Link>
         </p>
         <p className="form__text">
-          <Link
+          <span
             className="form__link"
-            to="/createAccount"
+            onClick={() => {
+              setShowSignup(true);
+            }}
             id="linkCreateAccount"
           >
             Don't have an account? Create account
-          </Link>
+          </span>
         </p>
       </form>
       {/*form--hidden on form className taken out to show the creat page */}
-      <form className="form " id="createAccount">
+      <form
+        className={`form ${showSignup ? "" : "form--hidden"}`}
+        id="createAccount"
+      >
         <h1 className="form__title">Create Account</h1>
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
