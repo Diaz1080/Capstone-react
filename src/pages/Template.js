@@ -30,6 +30,7 @@ export const Logo = ({ a, img }) => {
 export const PantryInfo = ({
   bussinessName,
   bussinessName2,
+  bussinessName3,
   adress,
   cityStateZip,
   phone,
@@ -38,6 +39,7 @@ export const PantryInfo = ({
     <div className="col">
       <p id="arrow text-left">{bussinessName}</p>
       <p id="arrow text-left">{bussinessName2}</p>
+      <p id="arrow text-left">{bussinessName3}</p>
       <p>{adress}</p>
       <p>{cityStateZip}</p>
       <p>{phone}</p>

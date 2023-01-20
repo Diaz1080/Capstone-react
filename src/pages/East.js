@@ -56,48 +56,61 @@ const East = () => {
       {/* End Row 1 */}
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg"  alt="logo"/>
+          <Logo a="https://www.thetablefoodpantry.org/" img="./logos/thetable.png"  alt="logo"/>
         </div>
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="The Table"
+          bussinessName2="Living Word Church"
+          bussinessName3="Community Food Pantry"
+          adress="6099 Court Street Rd"
+          cityStateZip="Syracuse NY 13206"
+          phone="+1 833-448-2253"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="SAT" time="10AM - 11:30AM" />
+          <Hour day="Twice a month SAT" time="9AM - 11AM" />
         </div>
         <Requirements
           text1="Photo ID."
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
-          text4="For Emergency assistance call ."
+          text4="Visit website for specific Dates and "
+          text5="to register in advance."
         />
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+        urlLink="https://www.facebook.com/thetablecommunityfoodpantry/"
+        image="./logos/ico-facebook.png"
+        urlLink1="https://www.instagram.com/thetablefoodpantry/?igshid=6dol5m0yfju2"
+        image1="./logos/ico-instagram.png"
+        />
       </div>
       {/* End Row 2 */}
       <div className="row" id="row">
-        <Logo a="" img="./logos/pantry.jpg"  alt="logo"/>
+        <Logo a="https://vineyardny.org/foodpantry" img="./logos/vineyardlogo.png"  alt="logo"/>
 
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="adress"
-          cityStateZip="Syracuse NY "
-          phone="Phone #"
+          bussinessName="Vineyard Church Food Distribution"
+          bussinessName2=""
+          adress="718 S Beech Street"
+          cityStateZip="Syracuse NY 13210"
+          phone="(315) 407-8463)"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="TUE" time="11AM - 1PM" />
+          <Hour day="SAT" time="1AM - 11:30AM" />
         </div>
         <Requirements
           text1="Photo ID."
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
         />
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+        urlLink="https://www.facebook.com/vineyardnysyracuse/"
+        image="./logos/ico-facebook.png"
+        urlLink1="https://www.instagram.com/vineyardNYsyracuse/"
+        image1="./logos/ico-instagram.png"
+        />
+        
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">

@@ -26,20 +26,19 @@ const South = () => {
 
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg" />
+          <Logo a="" img="./logos/apostolic.png" />
         </div>
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="Apostolic Church of Jesus Christ"
+          bussinessName2="Food  Pantry"
+          adress="347 Courtland Ave"
+          cityStateZip="Syracuse NY 13202"
+          phone="(315) 472-1665"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="MON" time="Closed" />
-          <Hour day="WED" time="Closed" />
-          <Hour day="THUR" time="Closed" />
+          <Hour day="Last SAT on Month" time="11AM - 2PM" />
+          
         </div>
         <Requirements
           text1="First time user must fill"
