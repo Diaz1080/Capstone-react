@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Main.scss";
+
+
 // add to all of the fields thatneed to be submitted
 const PantryUpdate = () => {
   const [companyName, setCompanyName] = useState("");
@@ -30,14 +32,14 @@ const PantryUpdate = () => {
   };
 
   return (
-    <div className="container-main main">
+    <div className="container-fluid" id="main">
       <form
         className="form"
         // method="POST"
         onSubmit={formSubmitted}
         // action="https://mailthis.to/nydia1080@yahoo.com"
        >
-        <h1 className="form__title">New Pantry Request Form</h1>
+        <h1 className="form__title">Pantry Update Request Form</h1>
 
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">

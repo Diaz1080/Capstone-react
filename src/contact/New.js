@@ -30,7 +30,7 @@ const New = () => {
   };
 
   return (
-    <div className="container-main main">
+    <div className="container-fluid" id="main">
       <form
         className="form"
         // method="POST"
@@ -45,7 +45,7 @@ const New = () => {
             type="text"
             id="signupUsername"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Company Name"
             // add to all of the fields thatneed to be submitted
             value={companyName}
@@ -53,7 +53,6 @@ const New = () => {
               setCompanyName(evt.target.value);
             }}
           />
-          
           <div className="form__input-error-message">
             {companyName.length}/30 Characters
           </div>
@@ -64,7 +63,7 @@ const New = () => {
             type="text"
             id="signupUsername"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Company Name continued"
             // add to all of the fields thatneed to be submitted
             value={companyNamecontinued}
@@ -82,7 +81,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Adress"
             value={Adress}
             onChange={(evt) => {
@@ -96,7 +95,7 @@ const New = () => {
             type="text"
             id="signupUsername"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="City State, Zip"
             // add to all of the fields that need to be submitted
             value={cityStateZip}
@@ -111,7 +110,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Phone"
             value={phone}
             onChange={(evt) => {
@@ -125,7 +124,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="DAY #1"
             value={day1}
             onChange={(evt) => {
@@ -139,7 +138,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Time #1"
             value={time1}
             onChange={(evt) => {
@@ -153,7 +152,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Day #2"
             value={day2}
             onChange={(evt) => {
@@ -167,7 +166,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Time #2"
             value={time2}
             onChange={(evt) => {
@@ -180,7 +179,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Day #3"
             value={day3}
             onChange={(evt) => {
@@ -194,7 +193,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Time #3"
             value={time3}
             onChange={(evt) => {
@@ -209,7 +208,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Requirements #1"
             value={text1}
             onChange={(evt) => {
@@ -223,7 +222,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Requirements #2"
             value={text2}
             onChange={(evt) => {
@@ -237,7 +236,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Requirements #3"
             value={text3}
             onChange={(evt) => {
@@ -250,7 +249,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Facebook"
             value={facebook}
             onChange={(evt) => {
@@ -264,7 +263,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Instagram"
             value={instagram}
             onChange={(evt) => {
@@ -278,7 +277,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="Twitter"
             value={twitter}
             onChange={(evt) => {
@@ -292,7 +291,7 @@ const New = () => {
           <input
             type="text"
             className="form__input"
-            autofocus
+            autoFocus
             placeholder="LinkedIn"
             value={linkedIn}
             onChange={(evt) => {
