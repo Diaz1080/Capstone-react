@@ -8,6 +8,7 @@ import New from "./contact/New";
 import Contact from "./contact/Contact";
 import Signup from "./contact/Signup";
 import PantryUpdate from "./contact/pantryUpdate";
+import FoodbankUpdate from "./contact/foodbankUpdate";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/PantryUpdate" element={<PantryUpdate />} />
+          <Route path="/FoodbankUpdate" element={<FoodbankUpdate />} />
         </Routes>
       </BrowserRouter>
     </div>
