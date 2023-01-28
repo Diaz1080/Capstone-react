@@ -5,7 +5,7 @@ import "./Main.scss";
 const Signup = () => {
   const [showSignup, setShowSignup] = useState(false);
   return (
-    <div className="container-main main">
+    <div className="container-fluid" id="main">
       <form className={`form ${showSignup ? "form--hidden" : ""}`} id="login">
         <h1 className="form__title">Login</h1>
         <div className="form__message form__message--error"></div>
