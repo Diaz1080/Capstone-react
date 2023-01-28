@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Main.scss";
 // add to all of the fields thatneed to be submitted
-const New = () => {
+const PantryUpdate = () => {
   const [companyName, setCompanyName] = useState("");
   const [companyNamecontinued, setcompanyNamecontinued] = useState("");
   const [Adress, setAdress] = useState("");
@@ -347,4 +347,4 @@ const New = () => {
   );
 };
 
-export default New;
+export default PantryUpdate;
