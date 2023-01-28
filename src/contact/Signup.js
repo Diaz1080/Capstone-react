@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "./Main.scss";
+import "./main2.scss";
 
 const Signup = () => {
   const [showSignup, setShowSignup] = useState(false);
   return (
-    <div className="container-fluid" id="main">
+    <div className="container-fluid" id="main2">
       <form className={`form ${showSignup ? "form--hidden" : ""}`} id="login">
         <h1 className="form__title">Login</h1>
         <div className="form__message form__message--error"></div>

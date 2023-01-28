@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Main.scss";
+import "./main2.scss";
 
 const Contact = () => {
   return (
-    <div className="container-fluid" id="main">
+    <div className="container-fluid" id="main2">
       <form
         className="form"
         method="POST"

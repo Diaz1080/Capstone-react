@@ -30,7 +30,7 @@ const New = () => {
   };
 
   return (
-    <div className="container-fluid" id="main">
+    <div className="container-main main">
       <form
         className="form"
         // method="POST"
