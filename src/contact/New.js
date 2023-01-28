@@ -1,13 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Main.scss";
-
+// add to all of the fields thatneed to be submitted
 const New = () => {
+  const [companyName, setCompanyName] = useState("");
+
+  const formSubmitted = (evt) => {
+    if (companyName.length > 30) {
+      alert("Name too long please split into other field");
+    }
+  };
+
   return (
     <div className="container-main main">
       <form
         className="form"
-        method="POST"
-        action="https://mailthis.to/nydia1080@yahoo.com"
+        // method="POST"
+        onSubmit={formSubmitted}
+        // action="https://mailthis.to/nydia1080@yahoo.com"
       >
         <h1 className="form__title">New Pantry Request Form</h1>
 
@@ -19,8 +29,15 @@ const New = () => {
             className="form__input"
             autofocus
             placeholder="Company Name"
+            // add to all of the fields thatneed to be submitted
+            value={companyName}
+            onChange={(evt) => {
+              setCompanyName(evt.target.value);
+            }}
           />
-          <div className="form__input-error-message"></div>
+          <div className="form__input-error-message">
+            {companyName.length}/30
+          </div>
         </div>
 
         <div className="form__input-group">
