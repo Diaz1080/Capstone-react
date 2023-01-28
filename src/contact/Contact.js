@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./main2.scss";
 
 const Contact = () => {
+  const [firstName, setfirstName] = useState("");
+  const [lastName, setlastName] = useState("");
+  const [email, setemail] = useState("");
+  const [message, setmessage] = useState("");
+
+  
+  
+
   return (
     <div className="container-fluid" id="main2">
       <form
         className="form"
-        method="POST"
-        action="https://mailthis.to/nydia1080@yahoo.com"
+        // method="POST"
+        
+        // action="https://mailthis.to/nydia1080@yahoo.com"
       >
         <h1 className="form__title">Contact Form</h1>
 
@@ -19,6 +29,10 @@ const Contact = () => {
             className="form__input"
             autofocus
             placeholder="First Name"
+            value={firstName}
+            onChange={(evt) => {
+              setfirstName(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -29,6 +43,10 @@ const Contact = () => {
             className="form__input"
             autofocus
             placeholder="Last Name"
+            value={lastName}
+            onChange={(evt) => {
+              setlastName(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -39,6 +57,10 @@ const Contact = () => {
             className="form__input"
             autofocus
             placeholder="Email"
+            value={email}
+            onChange={(evt) => {
+              setemail(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -50,6 +72,10 @@ const Contact = () => {
             rows="4"
             autofocus
             placeholder="I am Listening..."
+            value={message}
+            onChange={(evt) => {
+              setmessage(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>

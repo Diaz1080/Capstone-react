@@ -4,6 +4,13 @@ import "./main2.scss";
 
 const Signup = () => {
   const [showSignup, setShowSignup] = useState(false);
+  const [usernameOrEmail, setusernameOrEmail] = useState("");
+  const [password, setpassword] = useState("");
+  const [username, setusername] = useState("");
+  const [email, setemail] = useState("");
+  const [confirmPassword, setconfirmPassword] = useState("");
+
+
   return (
     <div className="container-fluid" id="main2">
       <form className={`form ${showSignup ? "form--hidden" : ""}`} id="login">
@@ -15,6 +22,10 @@ const Signup = () => {
             className="form__input"
             autoFocus
             placeholder="Username or Email"
+            value={usernameOrEmail}
+            onChange={(evt) => {
+              setusernameOrEmail(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -25,6 +36,10 @@ const Signup = () => {
             className="form__input"
             autoFocus
             placeholder="Password"
+            value={password}
+            onChange={(evt) => {
+              setpassword(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -63,6 +78,10 @@ const Signup = () => {
             className="form__input"
             autoFocus
             placeholder="Username"
+            value={username}
+            onChange={(evt) => {
+              setusername(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -73,6 +92,10 @@ const Signup = () => {
             className="form__input"
             autoFocus
             placeholder="Email Adress"
+            value={email}
+            onChange={(evt) => {
+              setemail(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -82,6 +105,10 @@ const Signup = () => {
             className="form__input"
             autoFocus
             placeholder="Password"
+            value={password}
+            onChange={(evt) => {
+              setpassword(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
@@ -91,6 +118,10 @@ const Signup = () => {
             className="form__input"
             autoFocus
             placeholder="Confirm password"
+            value={confirmPassword}
+            onChange={(evt) => {
+              setconfirmPassword(evt.target.value);
+            }}
           />
           <div className="form__input-error-message"></div>
         </div>
