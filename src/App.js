@@ -7,7 +7,7 @@ import Home from "./home/Home";
 import New from "./contact/New";
 import Contact from "./contact/Contact";
 import Signup from "./contact/Signup";
-import PantryUpdate from "./contact/pantryUpdate";
+import PantryUpdate from "./contact/PantryUpdate";
 import FoodbankUpdate from "./contact/foodbankUpdate";
 
 function App() {

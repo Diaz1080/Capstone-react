@@ -8,15 +8,21 @@ const Contact = () => {
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
 
-  
-  
+  const contactSubmited = async () => {
+    const response = await fetch("http://localhost:3001/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ firstName, lastName, email, message }),
+    });
+  };
 
   return (
     <div className="container-fluid" id="main2">
       <form
         className="form"
+        onSubmit={contactSubmited}
         // method="POST"
-        
+
         // action="https://mailthis.to/nydia1080@yahoo.com"
       >
         <h1 className="form__title">Contact Form</h1>

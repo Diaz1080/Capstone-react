@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./main2.scss";
+
 
 const Signup = () => {
   const [showSignup, setShowSignup] = useState(false);
@@ -9,11 +11,34 @@ const Signup = () => {
   const [username, setusername] = useState("");
   const [email, setemail] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
+  const navigateTo = useNavigate();
 
+  const signupFormSubmitted = async (evt) => {
+		evt.preventDefault();
+
+		
+		const signupResponse = await fetch(`http://localhost:3001/signup`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			
+			body: JSON.stringify({ email, password }),
+			
+			credentials: "include",
+		});
+		const signupData = await signupResponse.json();
+		if (signupData.error) {
+			alert(signupData.error);
+		} else {
+			
+			navigateTo("/");
+		}
+	};
 
   return (
     <div className="container-fluid" id="main2">
-      <form className={`form ${showSignup ? "form--hidden" : ""}`} id="login">
+      <form  onSubmit={signupFormSubmitted} className={`form ${showSignup ? "form--hidden" : ""}`} id="login">
         <h1 className="form__title">Login</h1>
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
@@ -44,7 +69,7 @@ const Signup = () => {
           <div className="form__input-error-message"></div>
         </div>
 
-        <button className="form__button" type="submit">
+        <button onSubmit={signupFormSubmitted} className="form__button" type="submit">
           Continue
         </button>
         <p className="form__text">
@@ -65,7 +90,7 @@ const Signup = () => {
         </p>
       </form>
       {/*form--hidden on form className taken out to show the creat page */}
-      <form
+      <form onSubmit={signupFormSubmitted}
         className={`form ${showSignup ? "" : "form--hidden"}`}
         id="createAccount"
       >
@@ -125,7 +150,7 @@ const Signup = () => {
           />
           <div className="form__input-error-message"></div>
         </div>
-        <button className="form__button" type="submit">
+        <button onSubmit={signupFormSubmitted} className="form__button" type="submit">
           Continue
         </button>
 
