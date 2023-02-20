@@ -7,7 +7,7 @@ import "./Main.scss";
 
 // add to all of the fields thatneed to be submitted
 const PantryUpdate = () => {
-  const navigateTo = useNavigate();
+  
   const [companyName, setCompanyName] = useState("");
   const [companyNamecontinued, setcompanyNamecontinued] = useState("");
   const [Adress, setAdress] = useState("");
@@ -26,13 +26,13 @@ const PantryUpdate = () => {
   const [time2, settime2] = useState("");
   const [day3, setday3] = useState("");
   const [time3, settime3] = useState("");
- 
+  const navigateTo = useNavigate();
 
-  const formSubmitted =  (evt) => {
-    if (companyName.length > 30) {
-      alert("Name too long please split into other field");
-    }
-  };
+  // const formSubmitted =  (evt) => {
+  //   if (companyName.length > 30) {
+  //     alert("Name too long please split into other field");
+  //   }
+  // };
     
       const pantryUpdateformSubmitted = async (evt) => {
         evt.preventDefault();
@@ -55,6 +55,9 @@ const PantryUpdate = () => {
 			navigateTo("/");
 
     }
+    if (companyName.length > 30) {
+      alert("Name too long please split into other field")
+    }
   };
 
   return (
@@ -62,7 +65,7 @@ const PantryUpdate = () => {
       <form 
         className="form"
         // method="POST"
-        onSubmit={formSubmitted}
+        onSubmit={pantryUpdateformSubmitted}
         // action="https://mailthis.to/nydia1080@yahoo.com"
        >
         <h1 className="form__title">Pantry Update Request Form</h1>

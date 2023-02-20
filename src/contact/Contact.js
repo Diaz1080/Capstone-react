@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./main2.scss";
@@ -12,9 +13,13 @@ const Contact = () => {
     const response = await fetch("http://localhost:3001/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ firstName, lastName, email, message }),
+      body: JSON.stringify({ firstName, lastName, email, message })
+      
+     
     });
+    
   };
+  
 
   return (
     <div className="container-fluid" id="main2">

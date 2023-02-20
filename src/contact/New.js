@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Main.scss";
 // add to all of the fields thatneed to be submitted
 const New = () => {
@@ -21,20 +22,46 @@ const New = () => {
   const [time2, settime2] = useState("");
   const [day3, setday3] = useState("");
   const [time3, settime3] = useState("");
+  const navigateTo = useNavigate();
 
+  // const formSubmitted = (evt) => {
+  //   if (companyName.length > 30) {
+  //     alert("Name too long please split into other field");
+  //   }
+  // };
 
-  const formSubmitted = (evt) => {
-    if (companyName.length > 30) {
-      alert("Name too long please split into other field");
-    }
-  };
+  const newPantryUpdateformSubmitted = async (evt) => {
+    evt.preventDefault();
+  const newpantryUpdateResponse = await fetch(`http://localhost:3001/PantryUpdate`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  
+  body: JSON.stringify({ companyName, companyNamecontinued, Adress, cityStateZip, phone, facebook, instagram, twitter, linkedIn, text1, text2,
+    text3, day1, time1, day2, time2, day3, time3}),
+  
+  credentials: "include",
+});
+const newpantryUpdateData = await newpantryUpdateResponse.json();
+if (newpantryUpdateData.error) {
+  alert(newpantryUpdateData.error);
+} else {
+  
+  navigateTo("/");
+
+}
+if (companyName.length > 30) {
+  alert("Name too long please split into other field")
+}
+};
 
   return (
     <div className="container-main main">
       <form
         className="form"
         // method="POST"
-        onSubmit={formSubmitted}
+        onSubmit={newPantryUpdateformSubmitted}
         // action="https://mailthis.to/nydia1080@yahoo.com"
        >
         <h1 className="form__title">New Pantry Request Form</h1>

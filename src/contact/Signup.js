@@ -23,7 +23,7 @@ const Signup = () => {
 				"Content-Type": "application/json",
 			},
 			
-			body: JSON.stringify({ email, password }),
+			body: JSON.stringify({ showSignup, usernameOrEmail, username, password, email, confirmPassword }),
 			
 			credentials: "include",
 		});
@@ -32,7 +32,7 @@ const Signup = () => {
 			alert(signupData.error);
 		} else {
 			
-			navigateTo("/");
+			navigateTo("/Signup");
 		}
 	};
 
@@ -150,7 +150,7 @@ const Signup = () => {
           />
           <div className="form__input-error-message"></div>
         </div>
-        <button onSubmit={signupFormSubmitted} className="form__button" type="submit">
+        <button  className="form__button" type="submit">
           Continue
         </button>
 
