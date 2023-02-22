@@ -55,7 +55,7 @@ const Home = () => {
           </div>
           <div className="col-9">
             <ul>
-              <li>Food Patries located in North Side of Syracuse.</li>
+              <li>Food Pantries located in North Side of Syracuse.</li>
               <li>What areas are served.</li>
               <li>Monthly fresh food locations in or near the North Side.</li>
               <li>Requirements.</li>
@@ -72,7 +72,7 @@ const Home = () => {
           </div>
           <div className="col-9">
             <ul>
-              <li>Food Patries located in East Side of Syracuse.</li>
+              <li>Food Pantries located in East Side of Syracuse.</li>
               <li>What areas are served.</li>
               <li>Monthly fresh food locations in or near the East Side.</li>
               <li>Requirements.</li>
@@ -89,7 +89,7 @@ const Home = () => {
           </div>
           <div className="col-9">
             <ul>
-              <li>Food Patries located in West Side of Syracuse.</li>
+              <li>Food Pantries located in West Side of Syracuse.</li>
               <li>What areas are served.</li>
               <li>Monthly fresh food locations in or near the West Side.</li>
               <li>Requirements.</li>
@@ -106,7 +106,7 @@ const Home = () => {
           </div>
           <div className="col-9">
             <ul>
-              <li>Food Patries located in South Side of Syracuse.</li>
+              <li>Food Pantries located in South Side of Syracuse.</li>
               <li>What areas are served.</li>
               <li>Monthly fresh food locations in or near the South Side.</li>
               <li>Requirements.</li>

@@ -32,7 +32,7 @@ const New = () => {
 
   const newPantryUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
-  const newpantryUpdateResponse = await fetch(`http://localhost:3001/PantryUpdate`, {
+  const newpantryUpdateResponse = await fetch(`http://localhost:3001/New`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

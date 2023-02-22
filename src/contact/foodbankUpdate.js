@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Main.scss";
 
-
 // add to all of the fields thatneed to be submitted
 const FoodbankUpdate = () => {
   const [companyName, setCompanyName] = useState("");
@@ -18,9 +17,6 @@ const FoodbankUpdate = () => {
   const [twitter, settwitter] = useState("");
   const [linkedIn, setlinkedIn] = useState("");
   const navigateTo = useNavigate();
-  
-  
-
 
   // const formSubmitted = (evt) => {
   //   if (companyName.length > 30) {
@@ -28,31 +24,41 @@ const FoodbankUpdate = () => {
   //   }
   // };
 
-
   const foodbankUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
-  const fbpantryUpdateResponse = await fetch(`http://localhost:3001/PantryUpdate`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  
-  body: JSON.stringify({ companyName, companyNamecontinued, Adress, cityStateZip, phone, facebook, instagram, twitter, linkedIn}),
-  
-  credentials: "include",
-});
-const fbpantryUpdateData = await fbpantryUpdateResponse.json();
-if (fbpantryUpdateData.error) {
-  alert(fbpantryUpdateData.error);
-} else {
-  
-  navigateTo("/");
+    const fbpantryUpdateResponse = await fetch(
+      `http://localhost:3001/foodbankUpdate`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-}
-if (companyName.length > 30) {
-  alert("Name too long please split into other field")
-}
-};
+        body: JSON.stringify({
+          companyName,
+          companyNamecontinued,
+          Adress,
+          cityStateZip,
+          phone,
+          facebook,
+          instagram,
+          twitter,
+          linkedIn,
+        }),
+
+        credentials: "include",
+      }
+    );
+    const fbpantryUpdateData = await fbpantryUpdateResponse.json();
+    if (fbpantryUpdateData.error) {
+      alert(fbpantryUpdateData.error);
+    } else {
+      navigateTo("/");
+    }
+    if (companyName.length > 30) {
+      alert("Name too long please split into other field");
+    }
+  };
 
   return (
     <div className="container-main main">
@@ -61,7 +67,7 @@ if (companyName.length > 30) {
         // method="POST"
         onSubmit={foodbankUpdateformSubmitted}
         // action="https://mailthis.to/nydia1080@yahoo.com"
-       >
+      >
         <h1 className="form__title">Foodbank Update Request Form</h1>
 
         <div className="form__message form__message--error"></div>
@@ -78,7 +84,7 @@ if (companyName.length > 30) {
               setCompanyName(evt.target.value);
             }}
           />
-          
+
           <div className="form__input-error-message">
             {companyName.length}/30 Characters
           </div>
@@ -97,12 +103,12 @@ if (companyName.length > 30) {
               setcompanyNamecontinued(evt.target.value);
             }}
           />
-          </div>
-          
-          <div className="form__input-error-message">
-            {companyName.length}/30 Characters
-          </div>
-        
+        </div>
+
+        <div className="form__input-error-message">
+          {companyName.length}/30 Characters
+        </div>
+
         <div className="form__input-group">
           <input
             type="text"
@@ -130,7 +136,7 @@ if (companyName.length > 30) {
             }}
           />
           <div className="form__input-error-message"></div>
-          </div>
+        </div>
 
         <div className="form__input-group">
           <input
@@ -174,7 +180,6 @@ if (companyName.length > 30) {
           <div className="form__input-error-message"></div>
         </div>
 
-    
         <div className="form__input-group">
           <input
             type="text"
