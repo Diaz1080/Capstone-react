@@ -55,7 +55,39 @@ const North = () => {
           image3="./logos/ico-instagram.png"
         />
       </div>
+
       {/* End Row 1 */}
+      <div className="row" id="row">
+        <div className="col">
+          <Logo a="https://www.assumptionsyr.org/pantry-kitchen" img="./logos/assumption.png" />
+        </div>
+        <PantryInfo
+          bussinessName="Assumption Church"
+          bussinessName2="Food Pantry"
+          adress="808 N Salina Street"
+          cityStateZip="Syracuse NY 13208"
+        />
+        <div className="col">
+          <h4>Hours:</h4>
+          <Hour day="MON-FRI" time="8:45AM - 11PM" />
+          
+        </div>
+        <Requirements
+          text1="Food pantry provides food twice per month"
+          text2="out registration form."
+        />
+        <SocialMediaHandles
+          urlLink="https://www.facebook.com/SNCCSYR"
+          image="./logos/ico-facebook.png"
+          urlLink1="https://twitter.com/SNCCSYR"
+          image1="./logos/ico-twitter.png"
+          urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
+          image2="./logos/ico-linkedin.png"
+          urlLink3="https://www.instagram.com/sncc315/"
+          image3="./logos/ico-instagram.png"
+        />
+      </div>
+      {/* end row 2 */}
       <div className="row" id="row">
         <div className="col">
           <Logo

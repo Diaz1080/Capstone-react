@@ -93,23 +93,24 @@ const South = () => {
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">
-        <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg" />
+        <Logo a="https://valleyworshipcenter.weebly.com/" img="./logos/valley.png" />
 
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="Valley Worship Center Church of the Nazarene"
+          bussinessName2="Valley Worship Center Food Pantry"
+          adress="2929 Midland Avenue"
+          cityStateZip="Syracuse NY 13205"
+          phone="315-492-2231"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="First Wed of every Month" time="2PM - 4:30PM" />
+          <Hour day="THUR" time="10PM - 12PM" />
+          <Hour day="First THUR of every Month" time="2PM - 4:30PM" />
         </div>
 
         <Requirements
-          text1="Everyone is Welcomed."
-          text2="Fresh Produce available."
+          text1="Onondaga County residents."
+          
         />
 
         <SocialMediaHandles />
