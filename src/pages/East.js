@@ -114,26 +114,30 @@ const East = () => {
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">
-        <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg"  alt="logo"/>
+        <Logo a="https://uumcsyracuse.org/" img="./logos/uumc.png"  alt="logo"/>
 
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="University United Methodist Church "
+          bussinessName2="Food Center at 324 University Avenue"
+          adress="1085 East Genesee Street"
+          cityStateZip="Syracuse NY 13210"
+          phone="315-475-7277"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="First Wed of every Month" time="2PM - 4:30PM" />
+          <Hour 
+          day="MON - FRI" time="10AM-NOON" 
+          />
         </div>
 
         <Requirements
-          text1="Everyone is Welcomed."
-          text2="Fresh Produce available."
+          text1="City of Syracuse residents."
+          
         />
 
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+       
+        />
       </div>
       {/* End Row 4 */}
       <div className="row" id="pantry">

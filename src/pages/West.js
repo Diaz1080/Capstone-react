@@ -60,37 +60,40 @@ const West = () => {
       {/* End Row 1 */}
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg" />
+          <Logo a="https://www.saintlucys.org/outreach-ministries" img="./logos/stlucy.png" />
         </div>
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="Saint Lucy’s Church"
+          bussinessName2=""
+          adress=" 432 Gifford Street"
+          cityStateZip="Syracuse NY 13204"
+          phone="315-424-0023"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="SAT" time="10AM - 11:30AM" />
+          <Hour day="MON" time="9AM - 12PM" />
+          <Hour day="TUE" time="9AM - 12PM" />
         </div>
         <Requirements
           text1="Photo ID."
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
-          text4="For Emergency assistance call ."
+          text4="Must live within Pantry boundaries."
         />
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+       
+        />
       </div>
       {/* End Row 2 */}
       <div className="row" id="row">
-        <Logo a="" img="./logos/pantry.jpg" />
+        <Logo a="https://www.stpatricksandstbrigids.org/ministries/" img="./logos/stpatrick.png" />
 
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="Saint Patrick / "
+          bussinessName2="Saint Brigid’s Food Pantry"
+          adress="216 North Lowell Aveune"
+          cityStateZip="Syracuse NY 13204"
+          phone=" 315-679-6825"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -100,19 +103,23 @@ const West = () => {
           text1="Photo ID."
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
+          text4="Must live within Pantry boundaries."
         />
-        <SocialMediaHandles />
+        <SocialMediaHandles 
+          urlLink="https://www.facebook.com/SaintPatricksSaintBrigids"
+          image="./logos/ico-facebook.png"
+        />
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">
-        <Logo a="https://claupc.org/syracuse/" img="./logos/pantry.jpg" />
+        <Logo a="https://www.unyumc.org/resources/church/syracuse-brown-memorial-umc" img="./logos/brown.png" />
 
         <PantryInfo
-          bussinessName="Food Pantry"
+          bussinessName="Brown Memorial Church"
           bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          adress="228 Davis Street"
+          cityStateZip="Syracuse NY 13204"
+          phone="315-474-8855"
         />
         <div className="col">
           <h4>Hours:</h4>
@@ -120,8 +127,10 @@ const West = () => {
         </div>
 
         <Requirements
-          text1="Everyone is Welcomed."
-          text2="Fresh Produce available."
+          text1="Photo ID."
+          text2="Proof of adress."
+          text3="Proof of any adult and children in household."
+          text4="Must live within Pantry boundaries."
         />
 
         <SocialMediaHandles />
