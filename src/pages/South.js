@@ -49,24 +49,22 @@ const South = () => {
       {/* End Row 1 */}
       <div className="row" id="row">
         <div className="col">
-          <Logo a="" img="./logos/pantry.jpg" />
+          <Logo a="https://emmausministry.org/services-we-provide/outreach-center/" img="./logos/emmaus.png" />
         </div>
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="Emmaus Ministry "
+          bussinessName2="Food Pantry"
+          adress="127 East Glen Avenue"
+          cityStateZip="Syracuse NY 13205"
+          phone="315-928-5191"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="SAT" time="10AM - 11:30AM" />
+          <Hour day="3rd WED of month" time="1PM - 2PM" />
         </div>
         <Requirements
-          text1="Photo ID."
-          text2="Proof of adress."
-          text3="Proof of any adult and children in household."
-          text4="For Emergency assistance call ."
+          text1="Onondaga County residents"
+         
         />
         <SocialMediaHandles />
       </div>
@@ -75,20 +73,21 @@ const South = () => {
         <Logo a="" img="./logos/pantry.jpg" />
 
         <PantryInfo
-          bussinessName="Food Pantry"
-          bussinessName2="Food Distribution Center"
-          adress="Adress"
-          cityStateZip="Syracuse NY "
-          phone="phone #"
+          bussinessName="Belle Grove Missionary Baptist"
+          bussinessName2="Emergency Food Pantry"
+          adress="219 Martin Luther King West"
+          cityStateZip="Syracuse NY 13205"
+          phone=" 315-466-9838"
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="TUE" time="11AM - 1PM" />
+          <Hour day="By appointment" time="call daily until 4 PM" />
         </div>
         <Requirements
-          text1="Photo ID."
-          text2="Proof of adress."
-          text3="Proof of any adult and children in household."
+          text1="Must reside in zip codes 13205 or 13207"
+          text2="For emergency need call; 315-466-9838 (Shenorah McMillian)"
+          text3="or 315-476-7391 (Belle Grove Missionary Baptist)"
+          text4="Picture ID, proof of all members of the household, proof of address"
         />
         <SocialMediaHandles />
       </div>
