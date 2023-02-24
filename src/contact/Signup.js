@@ -40,7 +40,7 @@ const Signup = () => {
         navigateTo("/");
       }
     } else {
-      const signupResponse = await fetch(`http://localhost:3001/Login`, {
+      const loginResponse = await fetch(`http://localhost:3001/Login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,9 +53,9 @@ const Signup = () => {
 
         credentials: "include",
       });
-      const signupData = await signupResponse.json();
-      if (signupData.error) {
-        alert(signupData.error);
+      const loginData = await loginResponse.json();
+      if (loginData.error) {
+        alert(loginData.error);
       } else {
         navigateTo("/");
       }

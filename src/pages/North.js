@@ -74,17 +74,18 @@ const North = () => {
         </div>
         <Requirements
           text1="Food pantry provides food twice per month"
-          text2="out registration form."
+          text2="Photo ID."
+          text3="Proof of adress."
+          text4="Proof of any adult and "
+          text5="children in household."
         />
         <SocialMediaHandles
-          urlLink="https://www.facebook.com/SNCCSYR"
+          urlLink="http://facebook.com/assumptionsyr"
           image="./logos/ico-facebook.png"
-          urlLink1="https://twitter.com/SNCCSYR"
+          urlLink1="http://twitter.com/assumptionsyr"
           image1="./logos/ico-twitter.png"
-          urlLink2="https://www.linkedin.com/company/syracuse-northeast-community-center/?viewAsMember=true"
-          image2="./logos/ico-linkedin.png"
-          urlLink3="https://www.instagram.com/sncc315/"
-          image3="./logos/ico-instagram.png"
+          urlLink2="http://instagram.com/assumptionsyr"
+          image2="./logos/ico-instagram.png"
         />
       </div>
       {/* end row 2 */}
