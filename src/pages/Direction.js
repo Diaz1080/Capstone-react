@@ -52,6 +52,7 @@ const Direction = (props) => {
             <div className="col">
               <h4>Hours:</h4>
             <Hour day={pantry.day} time={pantry.time} />
+         
             </div>
             <Requirements
               text1={pantry.text1}
@@ -79,123 +80,7 @@ const Direction = (props) => {
         );
       })}
 
-      <div className="row" id="row">
-        <div className="col">
-          <Logo
-            a="https://westcottcc.org/food-pantry/"
-            img="./logos/westcott.png"
-            alt="logo"
-          />
-        </div>
-        <PantryInfo
-          bussinessName="Westcott Community Center"
-          bussinessName2="Basic Needs Pantry"
-          adress="826 Euclid Ave"
-          cityStateZip="Syracuse NY 13210"
-          phone="(315) 478.8634 ext. 0"
-        />
-        <div className="col">
-          <h4>Hours:</h4>
-          <Hour day="MON twice Monthly" time="1PM - 3PM" />
-        </div>
-        <Requirements
-          text1="Must live in zip codes "
-          text2="13210, 13224."
-          text3="Must sign paper attesting to "
-          text4="low income status."
-        />
-        <SocialMediaHandles
-          urlLink="https://www.facebook.com/westcottcommunitycenter/"
-          image="./logos/ico-facebook.png"
-          alt="logo"
-        />
-      </div>
-      {/* End Row 1 */}
-      <div className="row" id="row">
-        <div className="col">
-          <Logo
-            a="https://www.thetablefoodpantry.org/"
-            img="./logos/thetable.png"
-            alt="logo"
-          />
-        </div>
-        <PantryInfo
-          bussinessName="The Table"
-          bussinessName2="Living Word Church"
-          bussinessName3="Community Food Pantry"
-          adress="6099 Court Street Rd"
-          cityStateZip="Syracuse NY 13206"
-          phone="+1 833-448-2253"
-        />
-        <div className="col">
-          <h4>Hours:</h4>
-          <Hour day="Twice a month SAT" time="9AM - 11AM" />
-        </div>
-        <Requirements
-          text1="Photo ID."
-          text2="Proof of adress."
-          text3="Proof of any adult and children in household."
-          text4="Visit website for specific Dates and "
-          text5="to register in advance."
-        />
-        <SocialMediaHandles
-          urlLink="https://www.facebook.com/thetablecommunityfoodpantry/"
-          image="./logos/ico-facebook.png"
-          urlLink1="https://www.instagram.com/thetablefoodpantry/?igshid=6dol5m0yfju2"
-          image1="./logos/ico-instagram.png"
-        />
-      </div>
-      {/* End Row 2 */}
-      <div className="row" id="row">
-        <Logo
-          a="https://vineyardny.org/foodpantry"
-          img="./logos/vineyardlogo.png"
-          alt="logo"
-        />
-
-        <PantryInfo
-          bussinessName="Vineyard Church Food Distribution"
-          bussinessName2=""
-          adress="718 S Beech Street"
-          cityStateZip="Syracuse NY 13210"
-          phone="(315) 407-8463)"
-        />
-        <div className="col">
-          <h4>Hours:</h4>
-          <Hour day="SAT" time="1AM - 11:30AM" />
-        </div>
-        <Requirements
-          text1="Photo ID."
-          text2="Proof of adress."
-          text3="Proof of any adult and children in household."
-        />
-        <SocialMediaHandles
-          urlLink="https://www.facebook.com/vineyardnysyracuse/"
-          image="./logos/ico-facebook.png"
-          urlLink1="https://www.instagram.com/vineyardNYsyracuse/"
-          image1="./logos/ico-instagram.png"
-        />
-      </div>
-      {/* End Row 3 */}
-      <div className="row" id="row">
-        <Logo a="https://uumcsyracuse.org/" img="./logos/uumc.png" alt="logo" />
-
-        <PantryInfo
-          bussinessName="University United Methodist Church "
-          bussinessName2="Food Center at 324 University Avenue"
-          adress="1085 East Genesee Street"
-          cityStateZip="Syracuse NY 13210"
-          phone="315-475-7277"
-        />
-        <div className="col">
-          <h4>Hours:</h4>
-          <Hour day="MON - FRI" time="10AM-NOON" />
-        </div>
-
-        <Requirements text1="City of Syracuse residents." />
-
-        <SocialMediaHandles />
-      </div>
+      
       {/* End Row 4 */}
       <div className="row" id="pantry">
         <FoodBank
