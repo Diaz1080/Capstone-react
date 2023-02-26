@@ -9,7 +9,8 @@ import Template, {
   FoodBank,
   Fresh,
   Mobile,
-  Finder
+  Finder,
+  
 } from "../pages/Template";
 import "./News.scss";
 
