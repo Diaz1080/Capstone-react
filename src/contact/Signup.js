@@ -126,8 +126,22 @@ const Signup = () => {
         id="createAccount"
       >
         <h1 className="form__title">Create Account</h1>
+          
+          <div class="dropdown" id="drop">
+  <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Pantry Option
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="dropdown-item" >East</a></li>
+    <li><a class="dropdown-item" >West</a></li>
+    <li><a class="dropdown-item" >North</a></li>
+    <li><a class="dropdown-item" >South</a></li>
+  </ul>
+</div>
+
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
+          
           <input
             type="text"
             id="signupUsername"
@@ -139,6 +153,7 @@ const Signup = () => {
               setusername(evt.target.value);
             }}
           />
+
           <div className="form__input-error-message"></div>
         </div>
         <div className="form__input-error-message">
