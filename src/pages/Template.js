@@ -47,14 +47,14 @@ export const PantryInfo = ({
   );
 };
 
-export const Hour = ({ day, time }) => {
+export const Hour = ({ day1, time1, day2, time2, day3, time3, day4, time4, day5, time5}) => {
   return (
     <div className="col" id="hours">
-      <ul>
-        <li>
-          {day}: {time}
-        </li>
-      </ul>
+      <p>{day1} {time1}</p>
+      <p>{day2} {time2}</p>
+      <p>{day3} {time3}</p>
+      <p>{day4} {time4}</p>
+      <p>{day5} {time5}</p>
     </div>
   );
 };
@@ -85,7 +85,7 @@ export const SocialMediaHandles = ({
   image2,
   image3,
 }) => {
-  if (!image && !image1 && !image2 && !image3) {
+  if (!facebook && !instagram && !twitter && !linkedIn) {
     return (
       <div className="col">
         <h5>Social Media Handles</h5>

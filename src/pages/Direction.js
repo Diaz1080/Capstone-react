@@ -51,8 +51,11 @@ const Direction = (props) => {
             />
             <div className="col">
               <h4>Hours:</h4>
-            <Hour day={pantry.day} time={pantry.time} />
-         
+            <Hour day1={pantry.day1} time1={pantry.time1} />
+            <Hour day2={pantry.day2} time2={pantry.time2} />
+            <Hour day3={pantry.day3} time3={pantry.time3} />
+            <Hour day4={pantry.day4} time4={pantry.time4} />
+            <Hour day5={pantry.day5} time5={pantry.time5} />
             </div>
             <Requirements
               text1={pantry.text1}

@@ -102,7 +102,7 @@ const West = () => {
         <Requirements
           text1="Photo ID."
           text2="Proof of adress."
-          text3="Proof of any adult and children in household."
+          text3="Proof of adress."
           text4="Must live within Pantry boundaries."
         />
         <SocialMediaHandles 
@@ -123,7 +123,7 @@ const West = () => {
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="First Wed of every Month" time="2PM - 4:30PM" />
+          <Hour day="First Wed of Month" time="2PM - 4:30PM" />
         </div>
 
         <Requirements

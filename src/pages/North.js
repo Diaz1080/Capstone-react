@@ -172,7 +172,7 @@ const North = () => {
 
         <Requirements
           text1="Everyone is Welcomed."
-          text2="Fresh Produce available."
+          text2="Everyone is Welcomed."
         />
 
         <SocialMediaHandles />

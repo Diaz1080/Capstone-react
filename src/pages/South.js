@@ -37,7 +37,7 @@ const South = () => {
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour day="Last SAT on Month" time="11AM - 2PM" />
+          <Hour day="Last SAT of Month" time="11AM - 2PM" />
           
         </div>
         <Requirements
@@ -105,7 +105,7 @@ const South = () => {
         <div className="col">
           <h4>Hours:</h4>
           <Hour day="THUR" time="10PM - 12PM" />
-          <Hour day="First THUR of every Month" time="2PM - 4:30PM" />
+          <Hour day="First THUR of Month" time="2PM - 4:30PM" />
         </div>
 
         <Requirements
