@@ -76,10 +76,10 @@ export const Requirements = ({ text1, text2, text3, text4, text5, text6 }) => {
 };
 
 export const SocialMediaHandles = ({
-  urlLink,
-  urlLink1,
-  urlLink2,
-  urlLink3,
+  facebook,
+  instagram,
+  twitter,
+  linkedIn,
   image,
   image1,
   image2,
@@ -98,24 +98,24 @@ export const SocialMediaHandles = ({
       <h5>Social Media Handles</h5>
       {image && (
         <span>
-          <a href={urlLink}>
-            <img src={image} id="logo" />
+          <a href={facebook}>
+            <img src={image} id="logo"/>
           </a>
         </span>
       )}
       <span>
-        <a href={urlLink1}>
+        <a href={instagram}>
           <img src={image1} id="logo"  />
         </a>
       </span>
       <span>
-        <a href={urlLink2}>
+        <a href={twitter}>
           <img src={image2} id="logo"  />
         </a>
       </span>
       <span>
-        <a href={urlLink3}>
-          <img src={image3} id="logo"  />
+        <a href={linkedIn}>
+          <img src={image3} id="logo" />
         </a>
       </span>
     

@@ -24,7 +24,7 @@ const Signup = () => {
 
         body: JSON.stringify({
           showSignup,
-        
+
           username,
           password,
           email,
@@ -48,7 +48,7 @@ const Signup = () => {
 
         body: JSON.stringify({
           password,
-          email,
+          email: usernameOrEmail,
         }),
 
         credentials: "include",
@@ -99,11 +99,7 @@ const Signup = () => {
           <div className="form__input-error-message"></div>
         </div>
 
-        <button
-          onSubmit={signupFormSubmitted}
-          className="form__button"
-          type="submit"
-        >
+        <button className="form__button" type="submit">
           Continue
         </button>
         <p className="form__text">

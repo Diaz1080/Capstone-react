@@ -5,7 +5,7 @@ import "./Main.scss";
 // add to all of the fields thatneed to be submitted
 const New = () => {
   const [companyName, setCompanyName] = useState("");
-  const [companyNamecontinued, setcompanyNamecontinued] = useState("");
+  const [companyNameContinued, setcompanyNameContinued] = useState("");
   const [Adress, setAdress] = useState("");
   const [cityStateZip, setcityStateZip] = useState("");
   const [phone, setphone] = useState("");
@@ -32,29 +32,45 @@ const New = () => {
 
   const newPantryUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
-  const newpantryUpdateResponse = await fetch(`http://localhost:3001/New`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  
-  body: JSON.stringify({ companyName, companyNamecontinued, Adress, cityStateZip, phone, facebook, instagram, twitter, linkedIn, text1, text2,
-    text3, day1, time1, day2, time2, day3, time3}),
-  
-  credentials: "include",
-});
-const newpantryUpdateData = await newpantryUpdateResponse.json();
-if (newpantryUpdateData.error) {
-  alert(newpantryUpdateData.error);
-} else {
-  
-  navigateTo("/");
+    const newpantryUpdateResponse = await fetch(`http://localhost:3001/New`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
 
-}
-if (companyName.length > 30) {
-  alert("Name too long please split into other field")
-}
-};
+      body: JSON.stringify({
+        companyName,
+        companyNameContinued,
+        Adress,
+        cityStateZip,
+        phone,
+        facebook,
+        instagram,
+        twitter,
+        linkedIn,
+        text1,
+        text2,
+        text3,
+        day1,
+        time1,
+        day2,
+        time2,
+        day3,
+        time3,
+      }),
+
+      credentials: "include",
+    });
+    const newpantryUpdateData = await newpantryUpdateResponse.json();
+    if (newpantryUpdateData.error) {
+      alert(newpantryUpdateData.error);
+    } else {
+      navigateTo("/");
+    }
+    if (companyName.length > 30) {
+      alert("Name too long please split into other field");
+    }
+  };
 
   return (
     <div className="container-main main">
@@ -63,7 +79,7 @@ if (companyName.length > 30) {
         // method="POST"
         onSubmit={newPantryUpdateformSubmitted}
         // action="https://mailthis.to/nydia1080@yahoo.com"
-       >
+      >
         <h1 className="form__title">New Pantry Request Form</h1>
 
         <div className="form__message form__message--error"></div>
@@ -93,17 +109,17 @@ if (companyName.length > 30) {
             autoFocus
             placeholder="Company Name continued"
             // add to all of the fields thatneed to be submitted
-            value={companyNamecontinued}
+            value={companyNameContinued}
             onChange={(evt) => {
-              setcompanyNamecontinued(evt.target.value);
+              setcompanyNameContinued(evt.target.value);
             }}
           />
-          </div>
-          
-          <div className="form__input-error-message">
-            {companyName.length}/30 Characters
-          </div>
-        
+        </div>
+
+        <div className="form__input-error-message">
+          {companyName.length}/30 Characters
+        </div>
+
         <div className="form__input-group">
           <input
             type="text"
@@ -131,7 +147,7 @@ if (companyName.length > 30) {
             }}
           />
           <div className="form__input-error-message"></div>
-          </div>
+        </div>
 
         <div className="form__input-group">
           <input
@@ -229,7 +245,6 @@ if (companyName.length > 30) {
           />
           <div className="form__input-error-message"></div>
         </div>
-
 
         <div className="form__input-group">
           <input

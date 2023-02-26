@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Template, {
   Logo,
@@ -8,11 +9,22 @@ import Template, {
   FoodBank,
   Fresh,
   Mobile,
-  Finder,
+  Finder
 } from "../pages/Template";
 import "./News.scss";
 
-const East = () => {
+const Direction = (props) => {
+  const [pantries, setPantries] = useState([]);
+  useEffect(() => {
+    const makeAPICall = async () => {
+      const response = await fetch(
+        `http://localhost:3001/pantries/${props.direction}`
+      );
+      const pantriesData = await response.json();
+      setPantries(pantriesData.pantries);
+    };
+    makeAPICall();
+  }, []);
   return (
     <div className="container-fluid news">
       <div className="row" id="link">
@@ -21,14 +33,58 @@ const East = () => {
             ⇦
           </Link>
         </div>
-        <Template header="East Side Pantry Information:" />
+        <Template header="Food Pantry Information:" />
       </div>
+
+      {pantries.map((pantry) => {
+        return (
+          <div className="row" id="row">
+            <div className="col">
+              <Logo a={pantry.link} img={pantry.logo} alt="logo" />
+            </div>
+            <PantryInfo
+              bussinessName={pantry.companyName}
+              bussinessName2={pantry.companyNameContinued}
+            adress={pantry.adress}
+              cityStateZip={pantry.cityStateZip}
+              phone={pantry.phone}
+            />
+            <div className="col">
+              <h4>Hours:</h4>
+            <Hour day={pantry.day} time={pantry.time} />
+            </div>
+            <Requirements
+              text1={pantry.text1}
+              text2={pantry.text2}
+              text3={pantry.text4}
+              text4={pantry.text4}
+              text5={pantry.text5}
+              text6={pantry.text6}
+            />
+            <SocialMediaHandles
+              facebook={pantry.facebook}
+              image="./logos/ico-facebook.png"
+              
+              instagram={pantry.instagram}
+              image1="./logos/ico-instagram.png"
+              
+              twitter={pantry.twitter}
+              image2="./logos/ico-twitter.png"
+              
+              linkedIn={pantry.linkedIn}
+              image3="./logos/ico-linkedin.png"
+             
+            />
+          </div>
+        );
+      })}
 
       <div className="row" id="row">
         <div className="col">
           <Logo
             a="https://westcottcc.org/food-pantry/"
-            img="./logos/westcott.png"  alt="logo"
+            img="./logos/westcott.png"
+            alt="logo"
           />
         </div>
         <PantryInfo
@@ -50,13 +106,18 @@ const East = () => {
         />
         <SocialMediaHandles
           urlLink="https://www.facebook.com/westcottcommunitycenter/"
-          image="./logos/ico-facebook.png" alt="logo"
+          image="./logos/ico-facebook.png"
+          alt="logo"
         />
       </div>
       {/* End Row 1 */}
       <div className="row" id="row">
         <div className="col">
-          <Logo a="https://www.thetablefoodpantry.org/" img="./logos/thetable.png"  alt="logo"/>
+          <Logo
+            a="https://www.thetablefoodpantry.org/"
+            img="./logos/thetable.png"
+            alt="logo"
+          />
         </div>
         <PantryInfo
           bussinessName="The Table"
@@ -77,16 +138,20 @@ const East = () => {
           text4="Visit website for specific Dates and "
           text5="to register in advance."
         />
-        <SocialMediaHandles 
-        urlLink="https://www.facebook.com/thetablecommunityfoodpantry/"
-        image="./logos/ico-facebook.png"
-        urlLink1="https://www.instagram.com/thetablefoodpantry/?igshid=6dol5m0yfju2"
-        image1="./logos/ico-instagram.png"
+        <SocialMediaHandles
+          urlLink="https://www.facebook.com/thetablecommunityfoodpantry/"
+          image="./logos/ico-facebook.png"
+          urlLink1="https://www.instagram.com/thetablefoodpantry/?igshid=6dol5m0yfju2"
+          image1="./logos/ico-instagram.png"
         />
       </div>
       {/* End Row 2 */}
       <div className="row" id="row">
-        <Logo a="https://vineyardny.org/foodpantry" img="./logos/vineyardlogo.png"  alt="logo"/>
+        <Logo
+          a="https://vineyardny.org/foodpantry"
+          img="./logos/vineyardlogo.png"
+          alt="logo"
+        />
 
         <PantryInfo
           bussinessName="Vineyard Church Food Distribution"
@@ -104,17 +169,16 @@ const East = () => {
           text2="Proof of adress."
           text3="Proof of any adult and children in household."
         />
-        <SocialMediaHandles 
-        urlLink="https://www.facebook.com/vineyardnysyracuse/"
-        image="./logos/ico-facebook.png"
-        urlLink1="https://www.instagram.com/vineyardNYsyracuse/"
-        image1="./logos/ico-instagram.png"
+        <SocialMediaHandles
+          urlLink="https://www.facebook.com/vineyardnysyracuse/"
+          image="./logos/ico-facebook.png"
+          urlLink1="https://www.instagram.com/vineyardNYsyracuse/"
+          image1="./logos/ico-instagram.png"
         />
-        
       </div>
       {/* End Row 3 */}
       <div className="row" id="row">
-        <Logo a="https://uumcsyracuse.org/" img="./logos/uumc.png"  alt="logo"/>
+        <Logo a="https://uumcsyracuse.org/" img="./logos/uumc.png" alt="logo" />
 
         <PantryInfo
           bussinessName="University United Methodist Church "
@@ -125,19 +189,12 @@ const East = () => {
         />
         <div className="col">
           <h4>Hours:</h4>
-          <Hour 
-          day="MON - FRI" time="10AM-NOON" 
-          />
+          <Hour day="MON - FRI" time="10AM-NOON" />
         </div>
 
-        <Requirements
-          text1="City of Syracuse residents."
-          
-        />
+        <Requirements text1="City of Syracuse residents." />
 
-        <SocialMediaHandles 
-       
-        />
+        <SocialMediaHandles />
       </div>
       {/* End Row 4 */}
       <div className="row" id="pantry">
@@ -171,17 +228,17 @@ const East = () => {
         />
         <SocialMediaHandles
           urlLink="http://www.facebook.com/foodbankcny"
-          image="./logos/ico-facebook.png"  
+          image="./logos/ico-facebook.png"
           urlLink1="http://instagram.com/foodbankofcny"
-          image1="./logos/ico-instagram.png " 
+          image1="./logos/ico-instagram.png "
           urlLink2="http://www.linkedin.com/company/food-bank-of-central-new-york"
-          image2="./logos/ico-linkedin.png"  
+          image2="./logos/ico-linkedin.png"
           urlLink3="http://twitter.com/foodbankofcny"
-          image3="logos/ico-twitter.png"  
+          image3="logos/ico-twitter.png"
         />
       </div>
     </div>
   );
 };
 
-export default East;
+export default Direction;

@@ -33,6 +33,7 @@ const North = () => {
           bussinessName2="Food Pantry-Food Distribution Center"
           adress="716 Hawley Ave"
           cityStateZip="Syracuse NY 13203"
+          
         />
         <div className="col">
           <h4>Hours:</h4>

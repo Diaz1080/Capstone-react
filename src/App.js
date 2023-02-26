@@ -1,14 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import North from "./pages/North";
-import South from "./pages/South";
-import West from "./pages/West";
-import East from "./pages/East";
 import Home from "./home/Home";
 import New from "./contact/New";
 import Contact from "./contact/Contact";
 import Signup from "./contact/Signup";
 import PantryUpdate from "./contact/PantryUpdate";
 import FoodbankUpdate from "./contact/foodbankUpdate";
+import Direction from "./pages/Direction"
 
 function App() {
   return (
@@ -17,10 +14,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home/Home" element={<Home />} />
-          <Route path="/North" element={<North />} />
-          <Route path="/South" element={<South />} />
-          <Route path="/East" element={<East />} />
-          <Route path="/West" element={<West />} />
+          <Route path="/West" element={<Direction direction="west" />} />
+          <Route path="/North" element={<Direction direction="north" />} />
+          <Route path="/South" element={<Direction direction="south" />} />
+          <Route path="/East" element={<Direction direction="east" />} />
           <Route path="/New" element={<New />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Signup" element={<Signup />} />
