@@ -7,7 +7,7 @@ const Signup = () => {
   const [showSignup, setShowSignup] = useState(false);
   const [usernameOrEmail, setusernameOrEmail] = useState("");
   const [password, setpassword] = useState("");
-  
+  const [direction, setdirection] = useState("")
   const [email, setemail] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
   const navigateTo = useNavigate();
@@ -124,8 +124,19 @@ const Signup = () => {
         id="createAccount"
       >
         <h1 className="form__title">Create Account</h1>
-          
-          <div class="dropdown" id="drop">
+         <select 
+         value={direction}
+            onChange={(evt) => {
+              setdirection(evt.target.value);
+            }}
+         >
+          <option>Pantry Options</option>
+          <option>East</option>
+          <option>West</option>
+          <option>North</option>
+          <option>South</option>
+          </select> 
+          {/* <div class="dropdown" id="drop">
   <button class="btn btn-warning dropdown-toggle"
    type="button" 
    data-bs-toggle="dropdown" 
@@ -139,7 +150,7 @@ const Signup = () => {
     <li><a class="dropdown-item" href="#">North</a></li>
     <li><a class="dropdown-item" href="#">South</a></li>
   </ul>
-</div>
+</div> */}
 
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
