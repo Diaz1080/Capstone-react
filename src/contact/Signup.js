@@ -12,6 +12,7 @@ const Signup = () => {
   const [confirmPassword, setconfirmPassword] = useState("");
   const navigateTo = useNavigate();
 
+
   const signupFormSubmitted = async (evt) => {
     evt.preventDefault();
 
@@ -124,7 +125,7 @@ const Signup = () => {
         id="createAccount"
       >
         <h1 className="form__title">Create Account</h1>
-         <select 
+         <select id="drop"
          value={direction}
             onChange={(evt) => {
               setdirection(evt.target.value);
