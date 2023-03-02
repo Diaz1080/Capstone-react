@@ -125,7 +125,7 @@ const Signup = () => {
         id="createAccount"
       >
         <h1 className="form__title">Create Account</h1>
-         <select id="drop"
+         {/* <select id="drop"
          value={direction}
             onChange={(evt) => {
               setdirection(evt.target.value);
@@ -135,9 +135,9 @@ const Signup = () => {
           <option>East</option>
           <option>West</option>
           <option>North</option>
-          <option>South</option>
-          </select> 
-          {/* <div class="dropdown" id="drop">
+          <option>South</option> */}
+          {/* </select> 
+          <div class="dropdown" id="drop">
   <button class="btn btn-warning dropdown-toggle"
    type="button" 
    data-bs-toggle="dropdown" 
