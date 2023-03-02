@@ -27,7 +27,7 @@ const FoodbankUpdate = () => {
   const foodbankUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
     const fbpantryUpdateResponse = await fetch(
-      `http://localhost:3001/foodbankUpdate`,
+      `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/foodbankUpdate`,
       {
         method: "POST",
         headers: {

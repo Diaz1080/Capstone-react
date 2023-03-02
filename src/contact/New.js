@@ -32,7 +32,7 @@ const New = () => {
 
   const newPantryUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
-    const newpantryUpdateResponse = await fetch(`http://localhost:3001/New`, {
+    const newpantryUpdateResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/New`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

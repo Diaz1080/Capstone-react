@@ -19,7 +19,7 @@ const Direction = (props) => {
   useEffect(() => {
     const makeAPICall = async () => {
       const response = await fetch(
-        `http://localhost:3001/pantries/${props.direction}`
+        `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/pantries/${props.direction}`
       );
       const pantriesData = await response.json();
       setPantries(pantriesData.pantries);

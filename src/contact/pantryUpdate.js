@@ -36,7 +36,7 @@ const PantryUpdate = () => {
     
       const pantryUpdateformSubmitted = async (evt) => {
         evt.preventDefault();
-      const pantryUpdateResponse = await fetch(`http://localhost:3001/PantryUpdate`, {
+      const pantryUpdateResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/PantryUpdate`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

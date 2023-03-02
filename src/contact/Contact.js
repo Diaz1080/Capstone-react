@@ -10,7 +10,7 @@ const Contact = () => {
   const [message, setmessage] = useState("");
 
   const contactSubmited = async () => {
-    const response = await fetch("http://localhost:3001/contact", {
+    const response = await fetch("http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ firstName, lastName, email, message })

@@ -17,7 +17,7 @@ const Signup = () => {
     evt.preventDefault();
 
     if (showSignup) {
-      const signupResponse = await fetch(`http://localhost:3001/signup`, {
+      const signupResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const Signup = () => {
         navigateTo("/");
       }
     } else {
-      const loginResponse = await fetch(`http://localhost:3001/Login`, {
+      const loginResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/Login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
