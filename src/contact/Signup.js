@@ -7,31 +7,43 @@ const Signup = () => {
   const [showSignup, setShowSignup] = useState(false);
   const [usernameOrEmail, setusernameOrEmail] = useState("");
   const [password, setpassword] = useState("");
-  // const [direction, setdirection] = useState("")
+  const [direction, setdirection] = useState("");
   const [email, setemail] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
+  const [pantryList, setPantryList] = useState();
   const navigateTo = useNavigate();
 
+  const updatePantryList = async (direction) => {
+    const res = await fetch(
+      `http://localhost:3001/pantries/${direction.toLowerCase()}`
+    );
+    const list = await res.json();
+    console.log(list);
+    setPantryList(list.pantries);
+  };
 
   const signupFormSubmitted = async (evt) => {
     evt.preventDefault();
 
     if (showSignup) {
-      const signupResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/signup`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const signupResponse = await fetch(
+        `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/signup`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
 
-        body: JSON.stringify({
-          showSignup,
-          email,
-          password,
-          confirmPassword,
-        }),
+          body: JSON.stringify({
+            showSignup,
+            email,
+            password,
+            confirmPassword,
+          }),
 
-        credentials: "include",
-      });
+          credentials: "include",
+        }
+      );
       const signupData = await signupResponse.json();
       if (signupData.error) {
         alert(signupData.error);
@@ -39,19 +51,22 @@ const Signup = () => {
         navigateTo("/");
       }
     } else {
-      const loginResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/Login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const loginResponse = await fetch(
+        `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/Login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
 
-        body: JSON.stringify({
-          password,
-          email: usernameOrEmail,
-        }),
+          body: JSON.stringify({
+            password,
+            email: usernameOrEmail,
+          }),
 
-        credentials: "include",
-      });
+          credentials: "include",
+        }
+      );
       const loginData = await loginResponse.json();
       if (loginData.error) {
         alert(loginData.error);
@@ -125,19 +140,28 @@ const Signup = () => {
         id="createAccount"
       >
         <h1 className="form__title">Create Account</h1>
-         {/* <select id="drop"
-         value={direction}
-            onChange={(evt) => {
-              setdirection(evt.target.value);
-            }}
-         >
+        <select
+          id="drop"
+          value={direction}
+          onChange={(evt) => {
+            setdirection(evt.target.value);
+            updatePantryList(evt.target.value);
+          }}
+        >
           <option>Pantry Options</option>
           <option>East</option>
           <option>West</option>
           <option>North</option>
-          <option>South</option> */}
-          {/* </select> 
-          <div class="dropdown" id="drop">
+          <option>South</option>
+        </select>
+        {pantryList && (
+          <select id="drop">
+            {pantryList.map((pantry) => {
+              return <option>{pantry.companyName}</option>;
+            })}
+          </select>
+        )}
+        {/* <div class="dropdown" id="drop">
   <button class="btn btn-warning dropdown-toggle"
    type="button" 
    data-bs-toggle="dropdown" 
@@ -151,11 +175,10 @@ const Signup = () => {
     <li><a class="dropdown-item" href="#">North</a></li>
     <li><a class="dropdown-item" href="#">South</a></li>
   </ul>
-</div> */}
-
+</div> 
+*/}
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
-          
           {/* <input
             type="text"
             id="signupUsername"

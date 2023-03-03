@@ -10,7 +10,6 @@ import Template, {
   Fresh,
   Mobile,
   Finder,
-  
 } from "../pages/Template";
 import "./News.scss";
 
@@ -19,7 +18,7 @@ const Direction = (props) => {
   useEffect(() => {
     const makeAPICall = async () => {
       const response = await fetch(
-        `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/pantries/${props.direction}`
+        `https://albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/pantries/${props.direction}`
       );
       const pantriesData = await response.json();
       setPantries(pantriesData.pantries);
@@ -46,17 +45,17 @@ const Direction = (props) => {
             <PantryInfo
               bussinessName={pantry.companyName}
               bussinessName2={pantry.companyNameContinued}
-            adress={pantry.adress}
+              adress={pantry.adress}
               cityStateZip={pantry.cityStateZip}
               phone={pantry.phone}
             />
             <div className="col">
               <h4>Hours:</h4>
-            <Hour day1={pantry.day1} time1={pantry.time1} />
-            <Hour day2={pantry.day2} time2={pantry.time2} />
-            <Hour day3={pantry.day3} time3={pantry.time3} />
-            <Hour day4={pantry.day4} time4={pantry.time4} />
-            <Hour day5={pantry.day5} time5={pantry.time5} />
+              <Hour day1={pantry.day1} time1={pantry.time1} />
+              <Hour day2={pantry.day2} time2={pantry.time2} />
+              <Hour day3={pantry.day3} time3={pantry.time3} />
+              <Hour day4={pantry.day4} time4={pantry.time4} />
+              <Hour day5={pantry.day5} time5={pantry.time5} />
             </div>
             <Requirements
               text1={pantry.text1}
@@ -69,22 +68,17 @@ const Direction = (props) => {
             <SocialMediaHandles
               facebook={pantry.facebook}
               image="./logos/ico-facebook.png"
-              
               instagram={pantry.instagram}
               image1="./logos/ico-instagram.png"
-              
               twitter={pantry.twitter}
               image2="./logos/ico-twitter.png"
-              
               linkedIn={pantry.linkedIn}
               image3="./logos/ico-linkedin.png"
-             
             />
           </div>
         );
       })}
 
-      
       {/* End Row 4 */}
       <div className="row" id="pantry">
         <FoodBank
