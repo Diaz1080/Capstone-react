@@ -32,35 +32,38 @@ const New = () => {
 
   const newPantryUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
-    const newpantryUpdateResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/New`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const newpantryUpdateResponse = await fetch(
+      `https://api.syracuse-food-pantry-easy-search.org/New`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-      body: JSON.stringify({
-        companyName,
-        companyNameContinued,
-        Adress,
-        cityStateZip,
-        phone,
-        facebook,
-        instagram,
-        twitter,
-        linkedIn,
-        text1,
-        text2,
-        text3,
-        day1,
-        time1,
-        day2,
-        time2,
-        day3,
-        time3,
-      }),
+        body: JSON.stringify({
+          companyName,
+          companyNameContinued,
+          Adress,
+          cityStateZip,
+          phone,
+          facebook,
+          instagram,
+          twitter,
+          linkedIn,
+          text1,
+          text2,
+          text3,
+          day1,
+          time1,
+          day2,
+          time2,
+          day3,
+          time3,
+        }),
 
-      credentials: "include",
-    });
+        credentials: "include",
+      }
+    );
     const newpantryUpdateData = await newpantryUpdateResponse.json();
     if (newpantryUpdateData.error) {
       alert(newpantryUpdateData.error);

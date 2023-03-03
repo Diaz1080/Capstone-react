@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Main.scss";
 
-
-
 // add to all of the fields thatneed to be submitted
 const PantryUpdate = () => {
-  
   const [companyName, setCompanyName] = useState("");
   const [companyNamecontinued, setcompanyNamecontinued] = useState("");
   const [Adress, setAdress] = useState("");
@@ -33,48 +30,65 @@ const PantryUpdate = () => {
   //     alert("Name too long please split into other field");
   //   }
   // };
-    
-      const pantryUpdateformSubmitted = async (evt) => {
-        evt.preventDefault();
-      const pantryUpdateResponse = await fetch(`http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/PantryUpdate`, {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			
-			body: JSON.stringify({ companyName, companyNamecontinued, Adress, cityStateZip, facebook, instagram, twitter, linkedIn, text1, text2,
-      text3, day1, time1, day2, time2, day3, time3 }),
-			
-			credentials: "include",
-		});
-		const pantryUpdateData = await pantryUpdateResponse.json();
-		if (pantryUpdateData.error) {
-			alert(pantryUpdateData.error);
-		} else {
-			
-			navigateTo("/");
 
+  const pantryUpdateformSubmitted = async (evt) => {
+    evt.preventDefault();
+    const pantryUpdateResponse = await fetch(
+      `https://api.syracuse-food-pantry-easy-search.org/PantryUpdate`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          companyName,
+          companyNamecontinued,
+          Adress,
+          cityStateZip,
+          facebook,
+          instagram,
+          twitter,
+          linkedIn,
+          text1,
+          text2,
+          text3,
+          day1,
+          time1,
+          day2,
+          time2,
+          day3,
+          time3,
+        }),
+
+        credentials: "include",
+      }
+    );
+    const pantryUpdateData = await pantryUpdateResponse.json();
+    if (pantryUpdateData.error) {
+      alert(pantryUpdateData.error);
+    } else {
+      navigateTo("/");
     }
     if (companyName.length > 30) {
-      alert("Name too long please split into other field")
+      alert("Name too long please split into other field");
     }
   };
 
   return (
     <div className="container-main main">
-      <form 
+      <form
         className="form"
         // method="POST"
         onSubmit={pantryUpdateformSubmitted}
         // action="https://mailthis.to/nydia1080@yahoo.com"
-       >
+      >
         <h1 className="form__title">Pantry Update Request Form</h1>
 
         <div className="form__message form__message--error"></div>
         <div className="form__input-group">
-          <input 
-           
-            type="text" 
+          <input
+            type="text"
             id="signupUsername"
             className="form__input"
             autofocus
@@ -85,7 +99,7 @@ const PantryUpdate = () => {
               setCompanyName(evt.target.value);
             }}
           />
-          
+
           <div className="form__input-error-message">
             {companyName.length}/30 Characters
           </div>
@@ -93,7 +107,6 @@ const PantryUpdate = () => {
 
         <div className="form__input-group">
           <input
-          
             type="text"
             id="signupUsername"
             className="form__input"
@@ -105,15 +118,14 @@ const PantryUpdate = () => {
               setcompanyNamecontinued(evt.target.value);
             }}
           />
-          </div>
-          
-          <div className="form__input-error-message">
-            {companyName.length}/30 Characters
-          </div>
-        
+        </div>
+
+        <div className="form__input-error-message">
+          {companyName.length}/30 Characters
+        </div>
+
         <div className="form__input-group">
           <input
-          
             type="text"
             className="form__input"
             autofocus
@@ -139,11 +151,10 @@ const PantryUpdate = () => {
             }}
           />
           <div className="form__input-error-message"></div>
-          </div>
+        </div>
 
         <div className="form__input-group">
           <input
-          
             type="text"
             className="form__input"
             autofocus
@@ -238,7 +249,6 @@ const PantryUpdate = () => {
           />
           <div className="form__input-error-message"></div>
         </div>
-
 
         <div className="form__input-group">
           <input
@@ -367,9 +377,12 @@ const PantryUpdate = () => {
             </div>--> */}
 
         <div className="form__input-group">
-          <button 
-          onSubmit={ pantryUpdateformSubmitted } 
-          className="form__button" type="submit" value="submit">
+          <button
+            onSubmit={pantryUpdateformSubmitted}
+            className="form__button"
+            type="submit"
+            value="submit"
+          >
             Continue
           </button>
           <div className="form__input-error-message"></div>

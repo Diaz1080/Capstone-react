@@ -27,7 +27,7 @@ const FoodbankUpdate = () => {
   const foodbankUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
     const fbpantryUpdateResponse = await fetch(
-      `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/foodbankUpdate`,
+      `https://api.syracuse-food-pantry-easy-search.org/foodbankUpdate`,
       {
         method: "POST",
         headers: {

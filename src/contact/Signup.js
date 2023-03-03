@@ -11,6 +11,7 @@ const Signup = () => {
   const [email, setemail] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
   const [pantryList, setPantryList] = useState();
+  const [pantry, setPantry] = useState();
   const navigateTo = useNavigate();
 
   const updatePantryList = async (direction) => {
@@ -20,6 +21,7 @@ const Signup = () => {
     const list = await res.json();
     console.log(list);
     setPantryList(list.pantries);
+    setPantry(list.pantries[0].companyName);
   };
 
   const signupFormSubmitted = async (evt) => {
@@ -27,7 +29,7 @@ const Signup = () => {
 
     if (showSignup) {
       const signupResponse = await fetch(
-        `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/signup`,
+        `https://api.syracuse-food-pantry-easy-search.org/signup`,
         {
           method: "POST",
           headers: {
@@ -39,6 +41,7 @@ const Signup = () => {
             email,
             password,
             confirmPassword,
+            pantry,
           }),
 
           credentials: "include",
@@ -52,7 +55,7 @@ const Signup = () => {
       }
     } else {
       const loginResponse = await fetch(
-        `http://Albacapstone-env.eba-isyz4dux.us-east-1.elasticbeanstalk.com/Login`,
+        `https://api.syracuse-food-pantry-easy-search.org/Login`,
         {
           method: "POST",
           headers: {
@@ -155,7 +158,13 @@ const Signup = () => {
           <option>South</option>
         </select>
         {pantryList && (
-          <select id="drop">
+          <select
+            id="drop"
+            value={pantry}
+            onChange={(evt) => {
+              setPantry(evt.target.value);
+            }}
+          >
             {pantryList.map((pantry) => {
               return <option>{pantry.companyName}</option>;
             })}
