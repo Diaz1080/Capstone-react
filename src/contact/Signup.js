@@ -16,7 +16,7 @@ const Signup = () => {
 
   const updatePantryList = async (direction) => {
     const res = await fetch(
-      `http://localhost:3001/pantries/${direction.toLowerCase()}`
+      `https://api.syracuse-food-pantry-easy-search.org/pantries/${direction.toLowerCase()}`
     );
     const list = await res.json();
     console.log(list);
