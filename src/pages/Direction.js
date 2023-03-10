@@ -45,7 +45,7 @@ const Direction = (props) => {
             <PantryInfo
               bussinessName={pantry.companyName}
               bussinessName2={pantry.companyNameContinued}
-              Adress={pantry.Adress}
+              adress={pantry.Adress}
               cityStateZip={pantry.cityStateZip}
               phone={pantry.phone}
             />
@@ -110,14 +110,14 @@ const Direction = (props) => {
           fresh3="Flyer"
         />
         <SocialMediaHandles
-          urlLink="http://www.facebook.com/foodbankcny"
+          facebook="http://www.facebook.com/foodbankcny"
           image="./logos/ico-facebook.png"
-          urlLink1="http://instagram.com/foodbankofcny"
+          instagram="http://instagram.com/foodbankofcny"
           image1="./logos/ico-instagram.png "
-          urlLink2="http://www.linkedin.com/company/food-bank-of-central-new-york"
-          image2="./logos/ico-linkedin.png"
-          urlLink3="http://twitter.com/foodbankofcny"
-          image3="logos/ico-twitter.png"
+          linkedIn="http://www.linkedin.com/company/food-bank-of-central-new-york"
+          image3="./logos/ico-linkedin.png"
+          twitter="http://twitter.com/foodbankofcny"
+          image2="logos/ico-twitter.png"
         />
       </div>
     </div>
