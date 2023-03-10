@@ -24,7 +24,7 @@ const Direction = (props) => {
       setPantries(pantriesData.pantries);
     };
     makeAPICall();
-  }, []);
+  }, [props.direction]);
   return (
     <div className="container-fluid news">
       <div className="row" id="link">
@@ -45,7 +45,7 @@ const Direction = (props) => {
             <PantryInfo
               bussinessName={pantry.companyName}
               bussinessName2={pantry.companyNameContinued}
-              adress={pantry.adress}
+              Adress={pantry.Adress}
               cityStateZip={pantry.cityStateZip}
               phone={pantry.phone}
             />
