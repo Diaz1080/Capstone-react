@@ -60,7 +60,7 @@ const Direction = (props) => {
             <Requirements
               text1={pantry.text1}
               text2={pantry.text2}
-              text3={pantry.text4}
+              text3={pantry.text3}
               text4={pantry.text4}
               text5={pantry.text5}
               text6={pantry.text6}

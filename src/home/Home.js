@@ -39,9 +39,12 @@ const Home = () => {
               <Link className="nav-link active" to="/New">
                 New Pantry Request{" "}
               </Link>
-              <Link className="nav-link active" to="/Signup">
-                Pantry Signup/Login{" "}
+              <Link className="nav-link active" to="/PantryUpdate">
+                Pantry Update{" "}
               </Link>
+              {/* <Link className="nav-link active" to="/Signup">
+                Pantry Signup/Login{" "}
+              </Link> */}
             </div>
           </div>
         </div>
