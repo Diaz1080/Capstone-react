@@ -32,6 +32,10 @@ const New = () => {
 
   const newPantryUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
+    if (companyName.length > 30) {
+      return alert("Name too long please split into other field");
+    }
+
     const newpantryUpdateResponse = await fetch(
       `https://api.syracuse-food-pantry-easy-search.org/New`,
       {
@@ -69,9 +73,6 @@ const New = () => {
       alert(newpantryUpdateData.error);
     } else {
       navigateTo("/");
-    }
-    if (companyName.length > 30) {
-      alert("Name too long please split into other field");
     }
   };
 

@@ -47,14 +47,35 @@ export const PantryInfo = ({
   );
 };
 
-export const Hour = ({ day1, time1, day2, time2, day3, time3, day4, time4, day5, time5}) => {
+export const Hour = ({
+  day1,
+  time1,
+  day2,
+  time2,
+  day3,
+  time3,
+  day4,
+  time4,
+  day5,
+  time5,
+}) => {
   return (
     <div className="col" id="hours">
-      <p>{day1} {time1}</p>
-      <p>{day2} {time2}</p>
-      <p>{day3} {time3}</p>
-      <p>{day4} {time4}</p>
-      <p>{day5} {time5}</p>
+      <p>
+        {day1} {time1}
+      </p>
+      <p>
+        {day2} {time2}
+      </p>
+      <p>
+        {day3} {time3}
+      </p>
+      <p>
+        {day4} {time4}
+      </p>
+      <p>
+        {day5} {time5}
+      </p>
     </div>
   );
 };
@@ -96,31 +117,35 @@ export const SocialMediaHandles = ({
   return (
     <div className="col">
       <h5>Social Media Handles</h5>
-      {image && (
+      {facebook && (
         <span>
           <a href={facebook}>
-            <img src={image} id="logo"/>
+            <img src={image} id="logo" />
           </a>
         </span>
       )}
-      <span>
-        <a href={instagram}>
-          <img src={image1} id="logo"  />
-        </a>
-      </span>
-      <span>
-        <a href={twitter}>
-          <img src={image2} id="logo"  />
-        </a>
-      </span>
-      <span>
-        <a href={linkedIn}>
-          <img src={image3} id="logo" />
-        </a>
-      </span>
-    
+      {instagram && (
+        <span>
+          <a href={instagram}>
+            <img src={image1} id="logo" />
+          </a>
+        </span>
+      )}
+      {twitter && (
+        <span>
+          <a href={twitter}>
+            <img src={image2} id="logo" />
+          </a>
+        </span>
+      )}
+      {linkedIn && (
+        <span>
+          <a href={linkedIn}>
+            <img src={image3} id="logo" />
+          </a>
+        </span>
+      )}
     </div>
-    
   );
 };
 export const FoodBank = ({
@@ -135,7 +160,10 @@ export const FoodBank = ({
   return (
     <div className="col">
       <h4>
-        <a href={urlLink4} id="arrow">{bussinessName4}</a> {bussinessName5}
+        <a href={urlLink4} id="arrow">
+          {bussinessName4}
+        </a>{" "}
+        {bussinessName5}
       </h4>
       <h4>{bussinessName6}</h4>
       <p>{adress2}</p>
@@ -149,7 +177,9 @@ export const Finder = ({ finder1, finder2, urlLink5, finder3 }) => {
     <div className="col">
       <p>{finder1}</p>
       <p>{finder2}</p>
-      <Link href={urlLink5} id="arrow">{finder3} </Link>
+      <Link href={urlLink5} id="arrow">
+        {finder3}{" "}
+      </Link>
     </div>
   );
 };
