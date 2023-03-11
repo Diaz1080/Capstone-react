@@ -90,7 +90,7 @@ const Home = () => {
               <Link to="/West">West</Link>
             </h1>
           </div>
-          <div className="col-9">
+          <div className="col-9"  id="card">
             <ul>
               <li>Food Pantries located in West Side of Syracuse.</li>
               <li>What areas are served.</li>
