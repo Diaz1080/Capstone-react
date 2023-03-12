@@ -7,7 +7,7 @@ import PantryUpdate from "./contact/PantryUpdate";
 import FoodbankUpdate from "./contact/foodbankUpdate";
 import Direction from "./pages/Direction";
 import AdminDashboard from "./contact/AdminDashboard";
-
+import NewPantryDashboard from "./contact/NewPantryDashboard";
 function App() {
   return (
     <div className="App">
@@ -25,6 +25,7 @@ function App() {
           <Route path="/PantryUpdate" element={<PantryUpdate />} />
           <Route path="/FoodbankUpdate" element={<FoodbankUpdate />} />
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
+          <Route path="/NewPantryDashboard" element={<NewPantryDashboard />} />
         </Routes>
       </BrowserRouter>
     </div>

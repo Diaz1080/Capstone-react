@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import APIUrl from "../APIUrl";
 
 const NewPantryDashboard = () => {
-  const [updates, setUpdates] = useState([]);
+  const [New, setNew] = useState([]);
   const updateNewTable = async () => {
-    const updateResponse = await fetch(`${APIUrl}/New`);
-    const updateData = await updateResponse.json();
-    setUpdates(updateData.Newupdates);
+    const NewResponse = await fetch(`${APIUrl}/New`);
+    const NewData = await NewResponse.json();
+    setNew(NewData.Newupdates);
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const NewPantryDashboard = () => {
 
   return (
     <div>
-      <h1>Admin</h1>
+      <h1>New Pantry</h1>
       <table className="table">
         <thead>
           <tr>
@@ -59,39 +59,39 @@ const NewPantryDashboard = () => {
           </tr>
         </thead>
         <tbody>
-          {updates.map((update) => {
+          {New.map((New) => {
             return (
-              <tr key={update.id}>
-                <th scope="row">{update.companyName}</th>
-                <th scope="row">{update.companyNameContinued}</th>
-                <th scope="row">{update.Adress}</th>
-                <th scope="row">{update.cityStateZip}</th>
-                <th scope="row">{update.phone}</th>
-                <td>{update.day1}</td>
-                <td>{update.time1}</td>
-                <td>{update.day2}</td>
-                <td>{update.time2}</td>
-                <td>{update.day3}</td>
-                <td>{update.time3}</td>
-                <td>{update.day4}</td>
-                <td>{update.time4}</td>
-                <td>{update.day5}</td>
-                <td>{update.time5}</td>
-                <td>{update.facebook}</td>
-                <td>{update.intagram}</td>
-                <td>{update.twitter}</td>
-                <td>{update.linkeIn}</td>
-                <td>{update.text1}</td>
-                <td>{update.text2}</td>
-                <td>{update.text3}</td>
-                <td>{update.text4}</td>
-                <td>{update.text5}</td>
-                <td>{update.text6}</td>
+              <tr key={New.id}>
+                <th scope="row">{New.companyName}</th>
+                <th scope="row">{New.companyNameContinued}</th>
+                <th scope="row">{New.Adress}</th>
+                <th scope="row">{New.cityStateZip}</th>
+                <th scope="row">{New.phone}</th>
+                <td>{New.day1}</td>
+                <td>{New.time1}</td>
+                <td>{New.day2}</td>
+                <td>{New.time2}</td>
+                <td>{New.day3}</td>
+                <td>{New.time3}</td>
+                <td>{New.day4}</td>
+                <td>{New.time4}</td>
+                <td>{New.day5}</td>
+                <td>{New.time5}</td>
+                <td>{New.facebook}</td>
+                <td>{New.intagram}</td>
+                <td>{New.twitter}</td>
+                <td>{New.linkeIn}</td>
+                <td>{New.text1}</td>
+                <td>{New.text2}</td>
+                <td>{New.text3}</td>
+                <td>{New.text4}</td>
+                <td>{New.text5}</td>
+                <td>{New.text6}</td>
                 <td>
                   <span
                     style={{ color: "blue", textDecoration: "underline" }}
                     onClick={() => {
-                      approve(update.id);
+                      approve(New.id);
                     }}
                   >
                     Approve
