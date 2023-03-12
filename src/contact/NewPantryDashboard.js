@@ -14,7 +14,7 @@ const NewPantryDashboard = () => {
   }, []);
 
   const approve = async (id) => {
-    const NewResponse = await fetch(`${APIUrl}/approveUpdate/${id}`);
+    const NewResponse = await fetch(`${APIUrl}/approveNew/${id}`);
     const data = await NewResponse.json();
     if (data.error) {
       alert(data.error);
