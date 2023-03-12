@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import APIUrl from "../APIUrl";
 import "./Main.scss";
 
 // add to all of the fields thatneed to be submitted
@@ -33,37 +34,34 @@ const PantryUpdate = () => {
 
   const pantryUpdateformSubmitted = async (evt) => {
     evt.preventDefault();
-    const pantryUpdateResponse = await fetch(
-      `https://api.syracuse-food-pantry-easy-search.org/PantryUpdate`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+    const pantryUpdateResponse = await fetch(`${APIUrl}/PantryUpdate`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
 
-        body: JSON.stringify({
-          companyName,
-          companyNamecontinued,
-          Adress,
-          cityStateZip,
-          facebook,
-          instagram,
-          twitter,
-          linkedIn,
-          text1,
-          text2,
-          text3,
-          day1,
-          time1,
-          day2,
-          time2,
-          day3,
-          time3,
-        }),
+      body: JSON.stringify({
+        companyName,
+        companyNamecontinued,
+        Adress,
+        cityStateZip,
+        facebook,
+        instagram,
+        twitter,
+        linkedIn,
+        text1,
+        text2,
+        text3,
+        day1,
+        time1,
+        day2,
+        time2,
+        day3,
+        time3,
+      }),
 
-        credentials: "include",
-      }
-    );
+      credentials: "include",
+    });
     const pantryUpdateData = await pantryUpdateResponse.json();
     if (pantryUpdateData.error) {
       alert(pantryUpdateData.error);

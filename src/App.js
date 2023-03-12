@@ -5,7 +5,8 @@ import Contact from "./contact/Contact";
 import Signup from "./contact/Signup";
 import PantryUpdate from "./contact/PantryUpdate";
 import FoodbankUpdate from "./contact/foodbankUpdate";
-import Direction from "./pages/Direction"
+import Direction from "./pages/Direction";
+import AdminDashboard from "./contact/AdminDashboard";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/PantryUpdate" element={<PantryUpdate />} />
           <Route path="/FoodbankUpdate" element={<FoodbankUpdate />} />
+          <Route path="/AdminDashboard" element={<AdminDashboard />} />
         </Routes>
       </BrowserRouter>
     </div>

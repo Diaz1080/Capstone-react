@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import APIUrl from "../APIUrl";
 import Template, {
   Logo,
   PantryInfo,
@@ -17,9 +18,7 @@ const Direction = (props) => {
   const [pantries, setPantries] = useState([]);
   useEffect(() => {
     const makeAPICall = async () => {
-      const response = await fetch(
-        `https://api.syracuse-food-pantry-easy-search.org/pantries/${props.direction}`
-      );
+      const response = await fetch(`${APIUrl}/pantries/${props.direction}`);
       const pantriesData = await response.json();
       setPantries(pantriesData.pantries);
     };
