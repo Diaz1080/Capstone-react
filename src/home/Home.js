@@ -19,7 +19,7 @@ const Home = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            Food Resources in Syracuse NY:
+            Resources in Syracuse NY:
             <div className="navbar-nav">
               <Link className="nav-link active" to="/North">
                 North
