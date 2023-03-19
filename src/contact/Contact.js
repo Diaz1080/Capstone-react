@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import APIUrl from "../APIUrl";
 import "./main2.scss";
 
 const Contact = () => {
@@ -8,15 +9,22 @@ const Contact = () => {
   const [lastName, setlastName] = useState("");
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
+  const navigateTo = useNavigate();
 
   const contactSubmited = async () => {
-    const response = await fetch("https://api.syracuse-food-pantry-easy-search.org/contact", {
+    const response = await fetch(`${APIUrl}/contact`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ firstName, lastName, email, message })
       
      
     });
+    const UpdateData = await response.json();
+    if (UpdateData.error) {
+      alert(UpdateData.error);
+    } else {
+      navigateTo("/");
+    }
     
   };
   

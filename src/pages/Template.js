@@ -120,28 +120,28 @@ export const SocialMediaHandles = ({
       {facebook && (
         <span>
           <a href={facebook}>
-            <img src={image} id="logo" />
+            <img src={image} id="logo" alt="logo"/>
           </a>
         </span>
       )}
       {instagram && (
         <span>
           <a href={instagram}>
-            <img src={image1} id="logo" />
+            <img src={image1} id="logo" alt="logo"/>
           </a>
         </span>
       )}
       {twitter && (
         <span>
           <a href={twitter}>
-            <img src={image2} id="logo" />
+            <img src={image2} id="logo" alt="logo" />
           </a>
         </span>
       )}
       {linkedIn && (
         <span>
           <a href={linkedIn}>
-            <img src={image3} id="logo" />
+            <img src={image3} id="logo" alt="logo"/>
           </a>
         </span>
       )}
