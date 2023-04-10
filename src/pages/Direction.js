@@ -105,7 +105,7 @@ const Direction = (props) => {
         <Fresh
           fresh1="Fresh Foods"
           fresh2="Distribution Schedule"
-          urlLink7="./logos/fresh.jpeg"
+          urlLink7="./logos/Fresh.jpeg"
           fresh3="Flyer"
         />
         <SocialMediaHandles
