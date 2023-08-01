@@ -116,7 +116,7 @@ const Direction = (props) => {
           linkedIn="http://www.linkedin.com/company/food-bank-of-central-new-york"
           image3="./logos/ico-linkedin.png"
           twitter="http://twitter.com/foodbankofcny"
-          image2="logos/ico-twitter.png"
+          image2="./logos/ico-twitter.png"
         />
       </div>
     </div>
