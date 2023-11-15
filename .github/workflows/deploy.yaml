@@ -13,7 +13,9 @@ jobs:
 
       - name: Setup node
         uses: actions/setup-node@v1
-        For more info: https:/github.blog/changelog/2023-6-13-github-actions-will-run-on-node16-instead-of-node12-by-default/ 
+        with: 
+              node-version: 16
+
 
       - name: Install dependencies
         run: npm install
